@@ -1,12 +1,8 @@
-extern void abort(void); 
-void reach_error(){}
-extern void abort(void); 
-void assume_abort_if_not(int cond) { 
-  if(!cond) {abort();}
-}
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+extern void __VERIFIER_assume(int);
 void __VERIFIER_assert(int cond) {
   if (!(cond)) {
-    ERROR: {reach_error();abort();}
+    ERROR: __VERIFIER_error();
   }
   return;
 }
@@ -20,7 +16,7 @@ int main()
 	int p=500;
 	int A [n][n][n];
         int B [n][n][n];
-	assume_abort_if_not(p<n);
+	__VERIFIER_assume(p<n);
         
 
 	i=0;

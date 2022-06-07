@@ -1,6 +1,5 @@
-extern void abort(void); 
-void reach_error(){}
-void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();abort();} } }
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 /*
   The program initializes the array 'a' in a loop having loop counter 'i' with a variable 'k' which is a shadow of 'i'. Checks universally quantified property \forall i, a[i] = i.
 */

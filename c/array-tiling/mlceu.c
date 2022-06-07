@@ -1,41 +1,38 @@
-extern void abort(void); 
-void reach_error(){}
-extern void abort(void); 
-void assume_abort_if_not(int cond) { 
-  if(!cond) {abort();}
-}
-void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();abort();} } }
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+extern void __VERIFIER_assume(int);
+void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int(void);
 void *malloc(unsigned int size);
 
 int SIZE;
 
+const int MAX = 100000;
+
 int main()
 {
 	SIZE = __VERIFIER_nondet_int();
-	if(SIZE <= 0) return 1;
-	assume_abort_if_not(SIZE <= 66060288/sizeof(int));
-
-	int i;
-	int *a = malloc(sizeof(int)*SIZE);
-
-	for(i=0; i<SIZE; i++)
+	if(SIZE > 1 && SIZE < MAX)
 	{
-		if( i>>16 > 250)
+		int i;
+		int *a = malloc(sizeof(int)*SIZE);
+
+		for(i=0; i<SIZE; i++)
 		{
-			a[i] = 1;
+			if( i>>16 > 250)
+			{
+				a[i] = 1;
+			}
+			else
+			{
+				a[i] = 0;
+			}
 		}
-		else
+
+		//assert
+		for(i=0; i<SIZE; i++)
 		{
-			a[i] = 0;
+			__VERIFIER_assert(a[i] == 0);
 		}
 	}
-
-	//assert
-	for(i=0; i<SIZE; i++)
-	{
-		__VERIFIER_assert(a[i] == 0);
-	}
-
 	return 1;
 }

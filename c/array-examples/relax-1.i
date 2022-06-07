@@ -1,14 +1,10 @@
-extern void abort(void); 
-void assume_abort_if_not(int cond) { 
-  if(!cond) {abort();}
-}
+extern void __VERIFIER_assume(int);
 extern unsigned long __VERIFIER_nondet_ulong(void);
-extern void abort(void); 
-void reach_error(){}
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 extern int __VERIFIER_nondet_int();
 void __VERIFIER_assert(int cond) {
   if (!(cond)) {
-    ERROR: {reach_error();abort();}
+    ERROR: __VERIFIER_error();
   }
   return;
 }
@@ -600,9 +596,9 @@ int main()
 				pat[i] = __VERIFIER_nondet_int();
 				a[i] = __VERIFIER_nondet_int();
         if(i<different)
-          assume_abort_if_not(pat[i]==a[i]);
+          __VERIFIER_assume(pat[i]==a[i]);
         else if(i==different)
-          assume_abort_if_not(pat[i]!=a[i]);
+          __VERIFIER_assume(pat[i]!=a[i]);
         else if(i>different)
           __VERIFIER_assert(pat[i]==a[i-1]);
     }

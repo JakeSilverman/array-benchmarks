@@ -1,8 +1,7 @@
-extern void abort(void); 
-void reach_error(){}
-void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();abort();} } }
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 
-int N = 1000000;
+#define N 1000000
 int main(){
 int i,j=0,a[N];
   unsigned int R=2;

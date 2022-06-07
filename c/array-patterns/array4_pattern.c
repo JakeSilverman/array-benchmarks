@@ -19,33 +19,21 @@
  * In while(1) loop, two indicies are selected non-deterministically, whose entries in array are zero.
  * Array1[index1] is initialized with count.
  * Array2[index2] is initialized with -count.
- * Sum of both array should be always zero.
- * Changelog --> 22 November 2019
- * Variable count is reset on reaching 200. One can have any other integer value as well
- * to reset count. It is an additional challenge for Tools/solvers using supervised learning
- * based techniques for algorithm selection. 200 is the max unrolling for most of the reachsafe
- * programs to reach property violation. Presence of 200 as part of statement assignment 
- * inside loop can be picked up by algorithm selector to deploy only falsification/correctness proving
- * techniques.
- 
+ * Sum of both array should be always zero. 
  * */
 
-extern void abort(void); 
-void reach_error(){}
-extern void abort(void); 
-void assume_abort_if_not(int cond) { 
-  if(!cond) {abort();}
-}
-void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();abort();} } }
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+extern void __VERIFIER_assume(int);
+void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int() ;
 extern short __VERIFIER_nondet_short() ;
 
-signed long long ARR_SIZE ;
+short ARR_SIZE ;
 
 int main()
 {
 	ARR_SIZE = __VERIFIER_nondet_short() ;
-	assume_abort_if_not(ARR_SIZE > 0) ;
+	__VERIFIER_assume(ARR_SIZE > 0) ;
 
 	int array1[ARR_SIZE] ;
 	int array2[ARR_SIZE] ;
@@ -67,15 +55,13 @@ int main()
 		
 		index1 = __VERIFIER_nondet_short() ;
 		index2 = __VERIFIER_nondet_short() ;
-		assume_abort_if_not(index1>=0 && index1 < ARR_SIZE) ;
-		assume_abort_if_not(index2>=0 && index2 < ARR_SIZE) ;
-		assume_abort_if_not(array1[index1] == 0) ;
-		assume_abort_if_not(array2[index2] == 0) ;
+		__VERIFIER_assume(index1>=0 && index1 < ARR_SIZE) ;
+		__VERIFIER_assume(index2>=0 && index2 < ARR_SIZE) ;
+		__VERIFIER_assume(array1[index1] == 0) ;
+		__VERIFIER_assume(array2[index2] == 0) ;
 
 		array1[index1] = num * (num * count) ;
 		array2[index2] = num * count ;
-		if(count == 200)
-			count = 0 ;
 		count++ ;
 
 		temp = __VERIFIER_nondet_int() ;

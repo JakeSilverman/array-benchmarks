@@ -1,10 +1,6 @@
-extern void abort(void); 
-void reach_error(){}
-extern void abort(void); 
-void assume_abort_if_not(int cond) { 
-  if(!cond) {abort();}
-}
-void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();abort();} } }
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+extern void __VERIFIER_assume(int);
+void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int(void);
 void *malloc(unsigned int size);
 
@@ -31,7 +27,7 @@ int main()
 
 		if(SIZE % 4 != 0) { return 1; }
 
-		assume_abort_if_not(SIZE % 4 == 0);
+		__VERIFIER_assume(SIZE % 4 == 0);
 		for (i = 1 ; i <= SIZE/4 ; i++)
 		{
 			value = ReadFromPort();	

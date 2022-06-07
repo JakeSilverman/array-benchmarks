@@ -1,12 +1,8 @@
-extern void abort(void); 
-void reach_error(){}
-extern void abort(void); 
-void assume_abort_if_not(int cond) { 
-  if(!cond) {abort();}
-}
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+extern void __VERIFIER_assume(int);
 void __VERIFIER_assert(int cond) {
   if (!(cond)) {
-    ERROR: {reach_error();abort();}
+    ERROR: __VERIFIER_error();
   }
   return;
 }
@@ -27,8 +23,8 @@ int main()
 
 	i=0;
 	j=0;
-	assume_abort_if_not(q<m);
-	assume_abort_if_not(s<n);
+	__VERIFIER_assume(q<m);
+	__VERIFIER_assume(s<n);
 
 	while(i < q){
 		j=0;

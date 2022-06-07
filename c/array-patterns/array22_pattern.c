@@ -23,17 +23,13 @@
  * Sum of array should always be zero.
  */
 
-extern void abort(void); 
-void reach_error(){}
-extern void abort(void); 
-void assume_abort_if_not(int cond) { 
-  if(!cond) {abort();}
-}
-void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();abort();} } }
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+extern void __VERIFIER_assume(int);
+void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int() ;
 extern short __VERIFIER_nondet_short() ;
 
-signed long long ARR_SIZE ;
+short ARR_SIZE ;
 
 int outerBoundaryPatternCheck(short index)
 {
@@ -45,8 +41,8 @@ int outerBoundaryPatternCheck(short index)
 
 int main()
 {
-	ARR_SIZE = (signed long long)__VERIFIER_nondet_short() ;
-	assume_abort_if_not(ARR_SIZE > 1) ;
+	ARR_SIZE = __VERIFIER_nondet_short() ;
+	__VERIFIER_assume(ARR_SIZE > 1) ;
 
 	int array[ARR_SIZE][ARR_SIZE] ;
 	
@@ -64,8 +60,8 @@ int main()
 		
 		index1 = __VERIFIER_nondet_short() ;
 		index2 = __VERIFIER_nondet_short() ;
-		assume_abort_if_not(index1>=0 && index1 < ARR_SIZE) ;
-		assume_abort_if_not(index2>=0 && index2 < ARR_SIZE) ;
+		__VERIFIER_assume(index1>=0 && index1 < ARR_SIZE) ;
+		__VERIFIER_assume(index2>=0 && index2 < ARR_SIZE) ;
 	
 		
 		array[index1][index2] = (outerBoundaryPatternCheck(index2)) ? (num*num) : array[index1][index2] ;

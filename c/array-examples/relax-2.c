@@ -1,7 +1,4 @@
-extern void abort(void); 
-void assume_abort_if_not(int cond) { 
-  if(!cond) {abort();}
-}
+extern void __VERIFIER_assume(int);
 extern unsigned long __VERIFIER_nondet_ulong(void);
 extern int __VERIFIER_nondet_int(void);
 // Copyright (c) 2015 Michael Tautschnig <michael.tautschnig@qmul.ac.uk>
@@ -86,12 +83,11 @@ whether _a_ contains _pat_ in the above relaxed sense, i.e., whether
 _pat_ is a relaxed prefix of any suffix of _a_.
 */
 
-extern void abort(void); 
-void reach_error(){}
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 
 void __VERIFIER_assert(int cond) {
   if (!(cond)) {
-    ERROR: {reach_error();abort();}
+    ERROR: __VERIFIER_error();
   }
   return;
 }
@@ -151,9 +147,9 @@ int main()
     for(int i=0; i<pat_len && i<a_len; i++)
     {
         if(i<different)
-          assume_abort_if_not(pat[i]==a[i]);
+          __VERIFIER_assume(pat[i]==a[i]);
         else if(i==different)
-          assume_abort_if_not(pat[i]!=a[i]);
+          __VERIFIER_assume(pat[i]!=a[i]);
         else if(i>different)
           __VERIFIER_assert(pat[i]==a[i-1]);
     }
