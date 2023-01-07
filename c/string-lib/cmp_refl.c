@@ -1,0 +1,14 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR:
+__VERIFIER_error(); } }
+extern int __VERIFIER_nondet_int();
+#include "string.h"
+
+int main() {
+  int size_a = __VERIFIER_nondet_int();
+  char a[size_a];
+  init(size_a, a);
+  int a_a = cmp(a, a);
+  __VERIFIER_assert(a_a == 0);
+  return 0;
+}
