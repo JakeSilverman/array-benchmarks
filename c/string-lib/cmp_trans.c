@@ -17,13 +17,8 @@ int main() {
   int a_b = cmp(a, b);
   int a_c = cmp(a, c);
   int b_c = cmp(b, c);
-  if (a_b == b_c && a_c == 0){
-        int i = 0;
-    while (b[i] != '\0')
-    {
-       __VERIFIER_assert(a[i] == b[i]);
-       i++;
-    }
+  if (a_b == b_c){
+       __VERIFIER_assert(a_b == a_c);
   }
   return 0;
 }

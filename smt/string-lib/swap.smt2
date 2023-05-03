@@ -1,4 +1,4 @@
-(set-info :original "/var/folders/xz/sgqbj6yn0yv_1mpy6_jqympm0000gn/T/sea-WdzVTx/swap.pp.ms.o.bc")
+(set-info :original "/var/folders/xz/sgqbj6yn0yv_1mpy6_jqympm0000gn/T/sea-gvEbAZ/swap.pp.ms.o.bc")
 (set-info :authors "SeaHorn v.0.1.0-rc3")
 (declare-rel verifier.error (Bool Bool Bool ))
 (declare-rel main@entry (Int ))
@@ -192,10 +192,10 @@
                 main@%_5_0
                 main@%_6_0
                 main@%_7_0
-                main@%sm11_0
+                main@%sm8_0
                 main@%_1_0
                 main@%sm10_0
-                main@%sm8_0)))
+                main@%sm11_0)))
 (rule (let ((a!1 (=> main@_bb13_0 (= main@%_13_0 (+ main@%_4_0 (* main@%.0.i.i_0 4))))))
 (let ((a!2 (and (main@_bb12 @__VERIFIER_nondet_int_0
                             main@%_4_0
@@ -204,10 +204,10 @@
                             main@%_5_0
                             main@%_6_0
                             main@%_7_0
-                            main@%sm11_0
+                            main@%sm8_0
                             main@%_1_0
                             main@%sm10_0
-                            main@%sm8_0)
+                            main@%sm11_0)
                 true
                 (= main@%_9_0 (< main@%.0.i.i_0 main@%_1_0))
                 (=> main@_bb13_0 (and main@_bb13_0 main@_bb12_0))
@@ -238,10 +238,10 @@
                   main@%_5_0
                   main@%_6_0
                   main@%_7_0
-                  main@%sm11_0
+                  main@%sm8_0
                   main@%_1_0
                   main@%sm10_0
-                  main@%sm8_0)))))
+                  main@%sm11_0)))))
 (rule (=> (and (main@_bb12 @__VERIFIER_nondet_int_0
                      main@%_4_0
                      main@%.0.i.i_0
@@ -249,17 +249,17 @@
                      main@%_5_0
                      main@%_6_0
                      main@%_7_0
-                     main@%sm11_0
+                     main@%sm8_0
                      main@%_1_0
                      main@%sm10_0
-                     main@%sm8_0)
+                     main@%sm11_0)
          true
          (= main@%_9_0 (< main@%.0.i.i_0 main@%_1_0))
          (=> main@init.exit.i_0 (and main@init.exit.i_0 main@_bb12_0))
          (=> (and main@init.exit.i_0 main@_bb12_0) (not main@%_9_0))
          (=> main@_bb14_0 (and main@_bb14_0 main@init.exit.i_0))
          (=> (and main@_bb14_0 main@init.exit.i_0)
-             (= main@%shadow.mem.4.0_0 main@%sm8_0))
+             (= main@%shadow.mem.4.0_0 main@%sm11_0))
          (=> (and main@_bb14_0 main@init.exit.i_0) (= main@%.0.i2.i_0 0))
          (=> (and main@_bb14_0 main@init.exit.i_0)
              (= main@%shadow.mem.4.0_1 main@%shadow.mem.4.0_0))
@@ -274,7 +274,7 @@
                 main@%shadow.mem.4.0_1
                 main@%_6_0
                 main@%_7_0
-                main@%sm11_0
+                main@%sm8_0
                 main@%_1_0
                 main@%sm10_0)))
 (rule (let ((a!1 (=> main@_bb15_0
@@ -287,7 +287,7 @@
                             main@%shadow.mem.4.0_0
                             main@%_6_0
                             main@%_7_0
-                            main@%sm11_0
+                            main@%sm8_0
                             main@%_1_0
                             main@%sm10_0)
                 true
@@ -321,7 +321,7 @@
                   main@%shadow.mem.4.0_2
                   main@%_6_0
                   main@%_7_0
-                  main@%sm11_0
+                  main@%sm8_0
                   main@%_1_0
                   main@%sm10_0)))))
 (rule (=> (and (main@_bb14 @__VERIFIER_nondet_int_0
@@ -332,7 +332,7 @@
                      main@%shadow.mem.4.0_0
                      main@%_6_0
                      main@%_7_0
-                     main@%sm11_0
+                     main@%sm8_0
                      main@%_1_0
                      main@%sm10_0)
          true
@@ -356,7 +356,7 @@
                 main@%_6_0
                 main@%shadow.mem.8.0_1
                 main@%_7_0
-                main@%sm11_0
+                main@%sm8_0
                 main@%_1_0)))
 (rule (let ((a!1 (=> main@_bb17_0
                (= main@%_25_0 (+ main@%_4_0 (* main@%.0.i4.i_0 4)))))
@@ -370,7 +370,7 @@
                             main@%_6_0
                             main@%shadow.mem.8.0_0
                             main@%_7_0
-                            main@%sm11_0
+                            main@%sm8_0
                             main@%_1_0)
                 true
                 (= main@%_23_0 (< main@%.0.i4.i_0 main@%_1_0))
@@ -407,7 +407,7 @@
                   main@%_6_0
                   main@%shadow.mem.8.0_2
                   main@%_7_0
-                  main@%sm11_0
+                  main@%sm8_0
                   main@%_1_0)))))
 (rule (=> (and (main@_bb16 main@%_4_0
                      main@%shadow.mem.0.0_0
@@ -417,7 +417,7 @@
                      main@%_6_0
                      main@%shadow.mem.8.0_0
                      main@%_7_0
-                     main@%sm11_0
+                     main@%sm8_0
                      main@%_1_0)
          true
          (= main@%_23_0 (< main@%.0.i4.i_0 main@%_1_0))
@@ -439,7 +439,7 @@
                 main@%shadow.mem.8.0_0
                 main@%_7_0
                 main@%.0.i5.i_1
-                main@%sm11_0
+                main@%sm8_0
                 main@%shadow.mem.4.1_1
                 main@%_1_0)))
 (rule (let ((a!1 (=> main@_bb19_0
@@ -453,7 +453,7 @@
                             main@%shadow.mem.8.0_0
                             main@%_7_0
                             main@%.0.i5.i_0
-                            main@%sm11_0
+                            main@%sm8_0
                             main@%shadow.mem.4.1_0
                             main@%_1_0)
                 true
@@ -464,7 +464,7 @@
                 (=> main@_bb19_0 (or (<= main@%_7_0 0) (> main@%_32_0 0)))
                 (=> main@_bb19_0 (> main@%_7_0 0))
                 (=> main@_bb19_0
-                    (= main@%_33_0 (select main@%sm11_0 main@%_32_0)))
+                    (= main@%_33_0 (select main@%sm8_0 main@%_32_0)))
                 a!2
                 (=> main@_bb19_0 (or (<= main@%_5_0 0) (> main@%_34_0 0)))
                 (=> main@_bb19_0 (> main@%_5_0 0))
@@ -490,7 +490,7 @@
                   main@%shadow.mem.8.0_0
                   main@%_7_0
                   main@%.0.i5.i_2
-                  main@%sm11_0
+                  main@%sm8_0
                   main@%shadow.mem.4.1_2
                   main@%_1_0)))))
 (rule (=> (and (main@_bb18 main@%_4_0
@@ -500,7 +500,7 @@
                      main@%shadow.mem.8.0_0
                      main@%_7_0
                      main@%.0.i5.i_0
-                     main@%sm11_0
+                     main@%sm8_0
                      main@%shadow.mem.4.1_0
                      main@%_1_0)
          true
@@ -525,7 +525,7 @@
                 main@%_6_0
                 main@%shadow.mem.8.0_0
                 main@%_7_0
-                main@%sm11_0
+                main@%sm8_0
                 main@%.0.i7.i_1
                 main@%shadow.mem.0.1_1
                 main@%shadow.mem.4.2_1
@@ -543,7 +543,7 @@
                             main@%_6_0
                             main@%shadow.mem.8.0_0
                             main@%_7_0
-                            main@%sm11_0
+                            main@%sm8_0
                             main@%.0.i7.i_0
                             main@%shadow.mem.0.1_0
                             main@%shadow.mem.4.2_0
@@ -595,7 +595,7 @@
                   main@%_6_0
                   main@%shadow.mem.8.0_0
                   main@%_7_0
-                  main@%sm11_0
+                  main@%sm8_0
                   main@%.0.i7.i_2
                   main@%shadow.mem.0.1_2
                   main@%shadow.mem.4.2_2
@@ -605,7 +605,7 @@
                      main@%_6_0
                      main@%shadow.mem.8.0_0
                      main@%_7_0
-                     main@%sm11_0
+                     main@%sm8_0
                      main@%.0.i7.i_0
                      main@%shadow.mem.0.1_0
                      main@%shadow.mem.4.2_0
@@ -632,7 +632,7 @@
                 main@%_6_0
                 main@%shadow.mem.8.0_0
                 main@%_7_0
-                main@%sm11_0
+                main@%sm8_0
                 main@%.0.i8.i_1
                 main@%shadow.mem.0.2_1
                 main@%shadow.mem.4.3_1
@@ -650,7 +650,7 @@
                             main@%_6_0
                             main@%shadow.mem.8.0_0
                             main@%_7_0
-                            main@%sm11_0
+                            main@%sm8_0
                             main@%.0.i8.i_0
                             main@%shadow.mem.0.2_0
                             main@%shadow.mem.4.3_0
@@ -702,7 +702,7 @@
                   main@%_6_0
                   main@%shadow.mem.8.0_0
                   main@%_7_0
-                  main@%sm11_0
+                  main@%sm8_0
                   main@%.0.i8.i_2
                   main@%shadow.mem.0.2_2
                   main@%shadow.mem.4.3_2
@@ -712,7 +712,7 @@
                      main@%_6_0
                      main@%shadow.mem.8.0_0
                      main@%_7_0
-                     main@%sm11_0
+                     main@%sm8_0
                      main@%.0.i8.i_0
                      main@%shadow.mem.0.2_0
                      main@%shadow.mem.4.3_0
@@ -731,7 +731,7 @@
                 main@%_6_0
                 main@%shadow.mem.8.0_0
                 main@%_7_0
-                main@%sm11_0
+                main@%sm8_0
                 main@%shadow.mem.0.2_0
                 main@%shadow.mem.4.3_0
                 main@%.01.i_1
@@ -747,7 +747,7 @@
                             main@%_6_0
                             main@%shadow.mem.8.0_0
                             main@%_7_0
-                            main@%sm11_0
+                            main@%sm8_0
                             main@%shadow.mem.0.2_0
                             main@%shadow.mem.4.3_0
                             main@%.01.i_0
@@ -784,7 +784,7 @@
                     (or (<= main@%_7_0 0) (> main@%_69_0 0)))
                 (=> main@__VERIFIER_assert.exit.i_0 (> main@%_7_0 0))
                 (=> main@__VERIFIER_assert.exit.i_0
-                    (= main@%_70_0 (select main@%sm11_0 main@%_69_0)))
+                    (= main@%_70_0 (select main@%sm8_0 main@%_69_0)))
                 (=> main@__VERIFIER_assert.exit.i_0
                     (= main@%_71_0 (= main@%_68_0 main@%_70_0)))
                 (=> main@__VERIFIER_assert.exit.i_0
@@ -812,7 +812,7 @@
                   main@%_6_0
                   main@%shadow.mem.8.0_0
                   main@%_7_0
-                  main@%sm11_0
+                  main@%sm8_0
                   main@%shadow.mem.0.2_0
                   main@%shadow.mem.4.3_0
                   main@%.01.i_2
@@ -828,7 +828,7 @@
                             main@%_6_0
                             main@%shadow.mem.8.0_0
                             main@%_7_0
-                            main@%sm11_0
+                            main@%sm8_0
                             main@%shadow.mem.0.2_0
                             main@%shadow.mem.4.3_0
                             main@%.01.i_0
@@ -865,7 +865,7 @@
                     (or (<= main@%_7_0 0) (> main@%_69_0 0)))
                 (=> main@__VERIFIER_assert.exit.i_0 (> main@%_7_0 0))
                 (=> main@__VERIFIER_assert.exit.i_0
-                    (= main@%_70_0 (select main@%sm11_0 main@%_69_0)))
+                    (= main@%_70_0 (select main@%sm8_0 main@%_69_0)))
                 (=> main@__VERIFIER_assert.exit.i_0
                     (= main@%_71_0 (= main@%_68_0 main@%_70_0)))
                 (=> main@__VERIFIER_assert.exit.i_0

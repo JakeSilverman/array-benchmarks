@@ -1,4 +1,4 @@
-(set-info :original "/var/folders/xz/sgqbj6yn0yv_1mpy6_jqympm0000gn/T/sea-JgHeNw/neg.pp.ms.o.bc")
+(set-info :original "/var/folders/xz/sgqbj6yn0yv_1mpy6_jqympm0000gn/T/sea-P55Fqb/neg.pp.ms.o.bc")
 (set-info :authors "SeaHorn v.0.1.0-rc3")
 (declare-rel verifier.error (Bool Bool Bool ))
 (declare-rel main@entry (Int ))
@@ -104,7 +104,7 @@
          (=> main@_bb_0 (> main@%_6_0 0))
          (=> main@_bb6_0 (and main@_bb6_0 main@_bb_0))
          (=> (and main@_bb6_0 main@_bb_0)
-             (= main@%shadow.mem.0.0_0 main@%sm5_0))
+             (= main@%shadow.mem.0.0_0 main@%sm3_0))
          (=> (and main@_bb6_0 main@_bb_0) (= main@%.0.i.i_0 0))
          (=> (and main@_bb6_0 main@_bb_0)
              (= main@%shadow.mem.0.0_1 main@%shadow.mem.0.0_0))
@@ -118,7 +118,7 @@
                main@%_6_0
                main@%_1_0
                main@%sm4_0
-               main@%sm3_0)))
+               main@%sm5_0)))
 (rule (let ((a!1 (=> main@_bb7_0 (= main@%_12_0 (+ main@%_4_0 (* main@%.0.i.i_0 4))))))
 (let ((a!2 (and (main@_bb6 @__VERIFIER_nondet_int_0
                            main@%_4_0
@@ -128,7 +128,7 @@
                            main@%_6_0
                            main@%_1_0
                            main@%sm4_0
-                           main@%sm3_0)
+                           main@%sm5_0)
                 true
                 (= main@%_8_0 (< main@%.0.i.i_0 main@%_1_0))
                 (=> main@_bb7_0 (and main@_bb7_0 main@_bb6_0))
@@ -160,7 +160,7 @@
                  main@%_6_0
                  main@%_1_0
                  main@%sm4_0
-                 main@%sm3_0)))))
+                 main@%sm5_0)))))
 (rule (=> (and (main@_bb6 @__VERIFIER_nondet_int_0
                     main@%_4_0
                     main@%.0.i.i_0
@@ -169,14 +169,14 @@
                     main@%_6_0
                     main@%_1_0
                     main@%sm4_0
-                    main@%sm3_0)
+                    main@%sm5_0)
          true
          (= main@%_8_0 (< main@%.0.i.i_0 main@%_1_0))
          (=> main@init.exit.i_0 (and main@init.exit.i_0 main@_bb6_0))
          (=> (and main@init.exit.i_0 main@_bb6_0) (not main@%_8_0))
          (=> main@_bb8_0 (and main@_bb8_0 main@init.exit.i_0))
          (=> (and main@_bb8_0 main@init.exit.i_0)
-             (= main@%shadow.mem.4.0_0 main@%sm3_0))
+             (= main@%shadow.mem.4.0_0 main@%sm5_0))
          (=> (and main@_bb8_0 main@init.exit.i_0) (= main@%.0.i2.i_0 0))
          (=> (and main@_bb8_0 main@init.exit.i_0)
              (= main@%shadow.mem.4.0_1 main@%shadow.mem.4.0_0))

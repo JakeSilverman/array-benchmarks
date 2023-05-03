@@ -24,7 +24,7 @@ int len(char *str) {
   return i;
 }
 
-int cmp(char *a, char *b)
+/*int cmp(char *a, char *b)
 {
   int i = 0;
   while(a[i] != '\0' && b[i] != '\0') {
@@ -41,6 +41,13 @@ int cmp(char *a, char *b)
   else if (a[i] < b[i])
     return -1;
   else return 1;
+}*/
+
+int cmp(const char* s1, const char* s2)
+{
+    while(*s1 && (*s1==*s2))
+        s1++,s2++;
+    return *(const unsigned char*)s1-*(const unsigned char*)s2;
 }
 
 void concat(char *a, char *b, char *c) {
