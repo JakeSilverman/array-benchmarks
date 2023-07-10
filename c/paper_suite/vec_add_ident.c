@@ -1,5 +1,5 @@
 extern void __VERIFIER_error() __attribute__ ((__noreturn__));
-void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR:
+void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
 __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
 
@@ -30,7 +30,7 @@ int main() {
      set_vec_ident(n, b);
      vec_add(n, a, b, c);
      for (int k = 0; k < n; k++) {
-     __VERIFIER_assert(a[k] == c[k]);
+     __JVERIFIER_assert(a[k] == c[k]);
      }
      return 0;
 }

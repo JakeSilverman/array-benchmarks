@@ -1,5 +1,5 @@
 extern void __VERIFIER_error() __attribute__ ((__noreturn__));
-void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
+void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
 
 #define N 100000
@@ -23,7 +23,7 @@ int main( ) {
   }
   int x;
   for ( x = 0 ; x < b ; x++ ) {
-    __VERIFIER_assert(  bb[ x ] >= 0  );
+    __JVERIFIER_assert(  bb[ x ] >= 0  );
   }  
   return 0;
 }

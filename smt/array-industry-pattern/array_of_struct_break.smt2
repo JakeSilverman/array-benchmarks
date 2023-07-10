@@ -1,18 +1,18 @@
 (set-info :original "/var/folders/xz/sgqbj6yn0yv_1mpy6_jqympm0000gn/T/sea-3C4m5K/array_of_struct_break.pp.ms.o.bc")
 (set-info :authors "SeaHorn v.0.1.0-rc3")
 (declare-rel verifier.error (Bool Bool Bool ))
-(declare-rel __VERIFIER_assert@_sm ((Array Int Int) Int ))
-(declare-rel __VERIFIER_assert@_call1 ((Array Int Int) Int ))
-(declare-rel __VERIFIER_assert (Bool Bool Bool (Array Int Int) (Array Int Int) Int ))
+(declare-rel __JVERIFIER_assert@_sm ((Array Int Int) Int ))
+(declare-rel __JVERIFIER_assert@_call1 ((Array Int Int) Int ))
+(declare-rel __JVERIFIER_assert (Bool Bool Bool (Array Int Int) (Array Int Int) Int ))
 (declare-rel main@entry ((Array Int Int) ))
 (declare-rel main@_bb (Int Int (Array Int Int) Int ))
 (declare-rel main@_bb5 (Int (Array Int Int) Int Int ))
 (declare-rel main@verifier.error.split ())
-(declare-var __VERIFIER_assert@%sm_0 (Array Int Int) )
-(declare-var __VERIFIER_assert@%_call_0 Bool )
-(declare-var __VERIFIER_assert@arg.0_0 Int )
-(declare-var __VERIFIER_assert@_sm_0 Bool )
-(declare-var __VERIFIER_assert@_call1_0 Bool )
+(declare-var __JVERIFIER_assert@%sm_0 (Array Int Int) )
+(declare-var __JVERIFIER_assert@%_call_0 Bool )
+(declare-var __JVERIFIER_assert@arg.0_0 Int )
+(declare-var __JVERIFIER_assert@_sm_0 Bool )
+(declare-var __JVERIFIER_assert@_call1_0 Bool )
 (declare-var main@%_20_0 Bool )
 (declare-var main@%_13_0 Int )
 (declare-var main@%_14_0 Int )
@@ -61,7 +61,7 @@
 (declare-var main@%shadow.mem.0.1_2 (Array Int Int) )
 (declare-var main@%.1.i_2 Int )
 (declare-var main@precall_0 Bool )
-(declare-var main@__VERIFIER_assert_0 Bool )
+(declare-var main@__JVERIFIER_assert_0 Bool )
 (declare-var main@_bb9_0 Bool )
 (declare-var main@verifier.error_0 Bool )
 (declare-var main@verifier.error.split_0 Bool )
@@ -69,46 +69,46 @@
 (rule (verifier.error false true true))
 (rule (verifier.error true false true))
 (rule (verifier.error true true true))
-(rule (__VERIFIER_assert
+(rule (__JVERIFIER_assert
   true
   true
   true
-  __VERIFIER_assert@%sm_0
-  __VERIFIER_assert@%sm_0
-  __VERIFIER_assert@arg.0_0))
-(rule (__VERIFIER_assert
+  __JVERIFIER_assert@%sm_0
+  __JVERIFIER_assert@%sm_0
+  __JVERIFIER_assert@arg.0_0))
+(rule (__JVERIFIER_assert
   false
   true
   true
-  __VERIFIER_assert@%sm_0
-  __VERIFIER_assert@%sm_0
-  __VERIFIER_assert@arg.0_0))
-(rule (__VERIFIER_assert
+  __JVERIFIER_assert@%sm_0
+  __JVERIFIER_assert@%sm_0
+  __JVERIFIER_assert@arg.0_0))
+(rule (__JVERIFIER_assert
   false
   false
   false
-  __VERIFIER_assert@%sm_0
-  __VERIFIER_assert@%sm_0
-  __VERIFIER_assert@arg.0_0))
-(rule (__VERIFIER_assert@_sm __VERIFIER_assert@%sm_0 __VERIFIER_assert@arg.0_0))
-(rule (=> (and (__VERIFIER_assert@_sm
-           __VERIFIER_assert@%sm_0
-           __VERIFIER_assert@arg.0_0)
+  __JVERIFIER_assert@%sm_0
+  __JVERIFIER_assert@%sm_0
+  __JVERIFIER_assert@arg.0_0))
+(rule (__JVERIFIER_assert@_sm __JVERIFIER_assert@%sm_0 __JVERIFIER_assert@arg.0_0))
+(rule (=> (and (__JVERIFIER_assert@_sm
+           __JVERIFIER_assert@%sm_0
+           __JVERIFIER_assert@arg.0_0)
          true
-         (= __VERIFIER_assert@%_call_0 (= __VERIFIER_assert@arg.0_0 0))
-         (not __VERIFIER_assert@%_call_0)
-         (=> __VERIFIER_assert@_call1_0
-             (and __VERIFIER_assert@_call1_0 __VERIFIER_assert@_sm_0))
-         __VERIFIER_assert@_call1_0)
-    (__VERIFIER_assert@_call1 __VERIFIER_assert@%sm_0 __VERIFIER_assert@arg.0_0)))
-(rule (=> (__VERIFIER_assert@_call1 __VERIFIER_assert@%sm_0 __VERIFIER_assert@arg.0_0)
-    (__VERIFIER_assert
+         (= __JVERIFIER_assert@%_call_0 (= __JVERIFIER_assert@arg.0_0 0))
+         (not __JVERIFIER_assert@%_call_0)
+         (=> __JVERIFIER_assert@_call1_0
+             (and __JVERIFIER_assert@_call1_0 __JVERIFIER_assert@_sm_0))
+         __JVERIFIER_assert@_call1_0)
+    (__JVERIFIER_assert@_call1 __JVERIFIER_assert@%sm_0 __JVERIFIER_assert@arg.0_0)))
+(rule (=> (__JVERIFIER_assert@_call1 __JVERIFIER_assert@%sm_0 __JVERIFIER_assert@arg.0_0)
+    (__JVERIFIER_assert
       true
       false
       false
-      __VERIFIER_assert@%sm_0
-      __VERIFIER_assert@%sm_0
-      __VERIFIER_assert@arg.0_0)))
+      __JVERIFIER_assert@%sm_0
+      __JVERIFIER_assert@%sm_0
+      __JVERIFIER_assert@arg.0_0)))
 (rule (main@entry main@%sm2_0))
 (rule (=> (and (main@entry main@%sm2_0)
          true
@@ -181,7 +181,7 @@
                 (=> main@_bb7_0 (= main@%_16_0 (ite main@%_15_0 1 0)))
                 (=> main@postcall_0 (and main@postcall_0 main@_bb7_0))
                 (=> (and main@postcall_0 main@_bb7_0) main@%_17_0)
-                (__VERIFIER_assert
+                (__JVERIFIER_assert
                   main@postcall_0
                   false
                   false
@@ -230,11 +230,11 @@
                 (=> main@_bb7_0 (= main@%_16_0 (ite main@%_15_0 1 0)))
                 (=> main@precall_0 (and main@precall_0 main@_bb7_0))
                 (=> (and main@precall_0 main@_bb7_0) (not main@%_17_0))
-                (=> main@__VERIFIER_assert_0
-                    (and main@__VERIFIER_assert_0 main@precall_0))
-                (=> main@__VERIFIER_assert_0 (= main@%_20_0 (= main@%_16_0 0)))
-                (=> main@__VERIFIER_assert_0 main@%_20_0)
-                (=> main@_bb9_0 (and main@_bb9_0 main@__VERIFIER_assert_0))
+                (=> main@__JVERIFIER_assert_0
+                    (and main@__JVERIFIER_assert_0 main@precall_0))
+                (=> main@__JVERIFIER_assert_0 (= main@%_20_0 (= main@%_16_0 0)))
+                (=> main@__JVERIFIER_assert_0 main@%_20_0)
+                (=> main@_bb9_0 (and main@_bb9_0 main@__JVERIFIER_assert_0))
                 (=> main@verifier.error_0
                     (and main@verifier.error_0 main@_bb9_0))
                 (=> main@verifier.error.split_0

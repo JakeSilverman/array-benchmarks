@@ -108,7 +108,7 @@
 (declare-var main@orig.main.exit_0 Bool )
 (declare-var main@%_80_0 Int )
 (declare-var main@precall_0 Bool )
-(declare-var main@__VERIFIER_assert_0 Bool )
+(declare-var main@__JVERIFIER_assert_0 Bool )
 (declare-var main@_bb19_0 Bool )
 (declare-var main@verifier.error_0 Bool )
 (declare-var main@verifier.error.split_0 Bool )
@@ -406,11 +406,11 @@
                 (=> main@orig.main.exit_0 (= main@%_80_0 (ite main@%_79_0 1 0)))
                 (=> main@orig.main.exit_0 (not main@%_81_0))
                 (=> main@precall_0 (and main@precall_0 main@orig.main.exit_0))
-                (=> main@__VERIFIER_assert_0
-                    (and main@__VERIFIER_assert_0 main@precall_0))
-                (=> main@__VERIFIER_assert_0 (= main@%_82_0 (= main@%_80_0 0)))
-                (=> main@__VERIFIER_assert_0 main@%_82_0)
-                (=> main@_bb19_0 (and main@_bb19_0 main@__VERIFIER_assert_0))
+                (=> main@__JVERIFIER_assert_0
+                    (and main@__JVERIFIER_assert_0 main@precall_0))
+                (=> main@__JVERIFIER_assert_0 (= main@%_82_0 (= main@%_80_0 0)))
+                (=> main@__JVERIFIER_assert_0 main@%_82_0)
+                (=> main@_bb19_0 (and main@_bb19_0 main@__JVERIFIER_assert_0))
                 (=> main@verifier.error_0
                     (and main@verifier.error_0 main@_bb19_0))
                 (=> main@verifier.error.split_0

@@ -1,6 +1,6 @@
 extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 extern int __VERIFIER_nondet_int(void);
-void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
+void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 
 #define N 100000
 
@@ -20,7 +20,7 @@ int main ( ) {
       i = i + 1;
     }
    
-    __VERIFIER_assert(  a[5] == 6  );
-    __VERIFIER_assert(  i == 5  );
+    __JVERIFIER_assert(  a[5] == 6  );
+    __JVERIFIER_assert(  i == 5  );
   return 0;
 }

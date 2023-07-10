@@ -1,5 +1,5 @@
 extern void __VERIFIER_error() __attribute__ ((__noreturn__));
-void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR:
+void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
 __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
 #include "string.h"
@@ -18,7 +18,7 @@ int main() {
   int a_c = cmp(a, c);
   int b_c = cmp(b, c);
   if (a_b == b_c){
-       __VERIFIER_assert(a_b == a_c);
+       __JVERIFIER_assert(a_b == a_c);
   }
   return 0;
 }

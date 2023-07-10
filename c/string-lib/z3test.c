@@ -1,5 +1,5 @@
 extern void __VERIFIER_error() __attribute__ ((__noreturn__));
-void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR:
+void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
 __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
 
@@ -13,7 +13,7 @@ int main() {
      for (int i = 0; i < n; i++) {
      a = a + 1;
      }
-     __VERIFIER_assert(a == b);
+     __JVERIFIER_assert(a == b);
      
      return 0;
 }

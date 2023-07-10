@@ -153,8 +153,8 @@
 (declare-var main@%.01.i_0 Int )
 (declare-var main@%.01.i_1 Int )
 (declare-var main@_bb25_0 Bool )
-(declare-var main@__VERIFIER_assert.exit.i_0 Bool )
-(declare-var main@__VERIFIER_assert.exit10.i_0 Bool )
+(declare-var main@__JVERIFIER_assert.exit.i_0 Bool )
+(declare-var main@__JVERIFIER_assert.exit10.i_0 Bool )
 (declare-var main@%_75_0 Int )
 (declare-var main@_bb24_1 Bool )
 (declare-var main@%.01.i_2 Int )
@@ -738,9 +738,9 @@
                 main@%_1_0)))
 (rule (let ((a!1 (=> main@_bb25_0 (= main@%_59_0 (+ main@%_4_0 (* main@%.01.i_0 4)))))
       (a!2 (=> main@_bb25_0 (= main@%_61_0 (+ main@%_6_0 (* main@%.01.i_0 4)))))
-      (a!3 (=> main@__VERIFIER_assert.exit.i_0
+      (a!3 (=> main@__JVERIFIER_assert.exit.i_0
                (= main@%_67_0 (+ main@%_5_0 (* main@%.01.i_0 4)))))
-      (a!4 (=> main@__VERIFIER_assert.exit.i_0
+      (a!4 (=> main@__JVERIFIER_assert.exit.i_0
                (= main@%_69_0 (+ main@%_7_0 (* main@%.01.i_0 4))))))
 (let ((a!5 (and (main@_bb24 main@%_4_0
                             main@%_5_0
@@ -769,41 +769,41 @@
                 (=> main@_bb25_0 (= main@%_63_0 (= main@%_60_0 main@%_62_0)))
                 (=> main@_bb25_0 (= main@%_64_0 (ite main@%_63_0 1 0)))
                 (=> main@_bb25_0 (= main@%_65_0 (= main@%_64_0 0)))
-                (=> main@__VERIFIER_assert.exit.i_0
-                    (and main@__VERIFIER_assert.exit.i_0 main@_bb25_0))
-                (=> (and main@__VERIFIER_assert.exit.i_0 main@_bb25_0)
+                (=> main@__JVERIFIER_assert.exit.i_0
+                    (and main@__JVERIFIER_assert.exit.i_0 main@_bb25_0))
+                (=> (and main@__JVERIFIER_assert.exit.i_0 main@_bb25_0)
                     (not main@%_65_0))
                 a!3
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (or (<= main@%_5_0 0) (> main@%_67_0 0)))
-                (=> main@__VERIFIER_assert.exit.i_0 (> main@%_5_0 0))
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0 (> main@%_5_0 0))
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (= main@%_68_0 (select main@%shadow.mem.4.3_0 main@%_67_0)))
                 a!4
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (or (<= main@%_7_0 0) (> main@%_69_0 0)))
-                (=> main@__VERIFIER_assert.exit.i_0 (> main@%_7_0 0))
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0 (> main@%_7_0 0))
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (= main@%_70_0 (select main@%sm8_0 main@%_69_0)))
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (= main@%_71_0 (= main@%_68_0 main@%_70_0)))
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (= main@%_72_0 (ite main@%_71_0 1 0)))
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (= main@%_73_0 (= main@%_72_0 0)))
-                (=> main@__VERIFIER_assert.exit10.i_0
-                    (and main@__VERIFIER_assert.exit10.i_0
-                         main@__VERIFIER_assert.exit.i_0))
-                (=> (and main@__VERIFIER_assert.exit10.i_0
-                         main@__VERIFIER_assert.exit.i_0)
+                (=> main@__JVERIFIER_assert.exit10.i_0
+                    (and main@__JVERIFIER_assert.exit10.i_0
+                         main@__JVERIFIER_assert.exit.i_0))
+                (=> (and main@__JVERIFIER_assert.exit10.i_0
+                         main@__JVERIFIER_assert.exit.i_0)
                     (not main@%_73_0))
-                (=> main@__VERIFIER_assert.exit10.i_0
+                (=> main@__JVERIFIER_assert.exit10.i_0
                     (= main@%_75_0 (+ main@%.01.i_0 1)))
                 (=> main@_bb24_1
-                    (and main@_bb24_1 main@__VERIFIER_assert.exit10.i_0))
-                (=> (and main@_bb24_1 main@__VERIFIER_assert.exit10.i_0)
+                    (and main@_bb24_1 main@__JVERIFIER_assert.exit10.i_0))
+                (=> (and main@_bb24_1 main@__JVERIFIER_assert.exit10.i_0)
                     (= main@%.01.i_1 main@%_75_0))
-                (=> (and main@_bb24_1 main@__VERIFIER_assert.exit10.i_0)
+                (=> (and main@_bb24_1 main@__JVERIFIER_assert.exit10.i_0)
                     (= main@%.01.i_2 main@%.01.i_1))
                 main@_bb24_1)))
   (=> a!5
@@ -819,9 +819,9 @@
                   main@%_1_0)))))
 (rule (let ((a!1 (=> main@_bb25_0 (= main@%_59_0 (+ main@%_4_0 (* main@%.01.i_0 4)))))
       (a!2 (=> main@_bb25_0 (= main@%_61_0 (+ main@%_6_0 (* main@%.01.i_0 4)))))
-      (a!3 (=> main@__VERIFIER_assert.exit.i_0
+      (a!3 (=> main@__JVERIFIER_assert.exit.i_0
                (= main@%_67_0 (+ main@%_5_0 (* main@%.01.i_0 4)))))
-      (a!4 (=> main@__VERIFIER_assert.exit.i_0
+      (a!4 (=> main@__JVERIFIER_assert.exit.i_0
                (= main@%_69_0 (+ main@%_7_0 (* main@%.01.i_0 4))))))
 (let ((a!5 (and (main@_bb24 main@%_4_0
                             main@%_5_0
@@ -850,31 +850,31 @@
                 (=> main@_bb25_0 (= main@%_63_0 (= main@%_60_0 main@%_62_0)))
                 (=> main@_bb25_0 (= main@%_64_0 (ite main@%_63_0 1 0)))
                 (=> main@_bb25_0 (= main@%_65_0 (= main@%_64_0 0)))
-                (=> main@__VERIFIER_assert.exit.i_0
-                    (and main@__VERIFIER_assert.exit.i_0 main@_bb25_0))
-                (=> (and main@__VERIFIER_assert.exit.i_0 main@_bb25_0)
+                (=> main@__JVERIFIER_assert.exit.i_0
+                    (and main@__JVERIFIER_assert.exit.i_0 main@_bb25_0))
+                (=> (and main@__JVERIFIER_assert.exit.i_0 main@_bb25_0)
                     (not main@%_65_0))
                 a!3
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (or (<= main@%_5_0 0) (> main@%_67_0 0)))
-                (=> main@__VERIFIER_assert.exit.i_0 (> main@%_5_0 0))
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0 (> main@%_5_0 0))
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (= main@%_68_0 (select main@%shadow.mem.4.3_0 main@%_67_0)))
                 a!4
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (or (<= main@%_7_0 0) (> main@%_69_0 0)))
-                (=> main@__VERIFIER_assert.exit.i_0 (> main@%_7_0 0))
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0 (> main@%_7_0 0))
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (= main@%_70_0 (select main@%sm8_0 main@%_69_0)))
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (= main@%_71_0 (= main@%_68_0 main@%_70_0)))
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (= main@%_72_0 (ite main@%_71_0 1 0)))
-                (=> main@__VERIFIER_assert.exit.i_0
+                (=> main@__JVERIFIER_assert.exit.i_0
                     (= main@%_73_0 (= main@%_72_0 0)))
                 (=> main@_bb27_0
-                    (and main@_bb27_0 main@__VERIFIER_assert.exit.i_0))
-                (=> (and main@_bb27_0 main@__VERIFIER_assert.exit.i_0)
+                    (and main@_bb27_0 main@__JVERIFIER_assert.exit.i_0))
+                (=> (and main@_bb27_0 main@__JVERIFIER_assert.exit.i_0)
                     main@%_73_0)
                 (=> main@_bb26_0 (and main@_bb26_0 main@_bb25_0))
                 (=> (and main@_bb26_0 main@_bb25_0) main@%_65_0)

@@ -64,7 +64,7 @@
 (declare-var main@%.0.i_0 Int )
 (declare-var main@%.0.i_1 Int )
 (declare-var main@%_24_0 Bool )
-(declare-var main@__VERIFIER_assert.exit.i_0 Bool )
+(declare-var main@__JVERIFIER_assert.exit.i_0 Bool )
 (declare-var main@_bb11_0 Bool )
 (declare-var main@%_32_0 Int )
 (declare-var main@_bb9_1 Bool )
@@ -272,13 +272,13 @@
                 (= main@%_27_0 (= main@%_23_0 main@%_26_0))
                 (= main@%_28_0 (ite main@%_27_0 1 0))
                 (= main@%_29_0 (= main@%_28_0 0))
-                (=> main@__VERIFIER_assert.exit.i_0
-                    (and main@__VERIFIER_assert.exit.i_0 main@_bb9_0))
-                (=> (and main@__VERIFIER_assert.exit.i_0 main@_bb9_0)
+                (=> main@__JVERIFIER_assert.exit.i_0
+                    (and main@__JVERIFIER_assert.exit.i_0 main@_bb9_0))
+                (=> (and main@__JVERIFIER_assert.exit.i_0 main@_bb9_0)
                     (not main@%_29_0))
-                (=> main@__VERIFIER_assert.exit.i_0 (not main@%_24_0))
+                (=> main@__JVERIFIER_assert.exit.i_0 (not main@%_24_0))
                 (=> main@_bb11_0
-                    (and main@_bb11_0 main@__VERIFIER_assert.exit.i_0))
+                    (and main@_bb11_0 main@__JVERIFIER_assert.exit.i_0))
                 (=> main@_bb11_0 (= main@%_32_0 (+ main@%.0.i_0 1)))
                 (=> main@_bb9_1 (and main@_bb9_1 main@_bb11_0))
                 (=> (and main@_bb9_1 main@_bb11_0) (= main@%.0.i_1 main@%_32_0))
