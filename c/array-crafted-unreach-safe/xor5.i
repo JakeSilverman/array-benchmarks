@@ -114,7 +114,7 @@ int main ()
 
     if(ret != ret2 || ret !=ret5){
 
-      {reach_error();}
+      {__JVERIFIER_assert(0);}
 
     }
 

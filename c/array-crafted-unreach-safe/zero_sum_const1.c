@@ -16,7 +16,7 @@ void assume_abort_if_not(int cond) {
 
 }
 
-void __ORIG_VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();abort();} } }
+void __ORIG_VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {__JVERIFIER_assert(0);abort();} } }
 
 extern long __VERIFIER_nondet_long(void);
 
