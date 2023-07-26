@@ -8,13 +8,14 @@ int main() {
   int size = __VERIFIER_nondet_int();
   char str[size];
   init(size, str);
-  char str2[size];
-  copy(str, str2);
+  char chr = __VERIFIER_nondet_char();
+  // TODO: cannot prove this... why not?:
+  set(str, 10, chr);
   int i = 0;
-  while (str[i] != '\0')
+  while (i < 5)
   {
-     __JVERIFIER_assert(str[i] == str2[i]) ;
-     i++;
+      __JVERIFIER_assert(str[i] == chr);
+      i++;
   }
   return 0;
 }

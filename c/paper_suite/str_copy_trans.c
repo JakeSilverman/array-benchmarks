@@ -10,10 +10,12 @@ int main() {
   init(size, str);
   char str2[size];
   copy(str, str2);
+  char str3[size];
+  copy(str, str3);
   int i = 0;
-  while (str[i] != '\0')
+  while (str2[i] != '\0')
   {
-     __JVERIFIER_assert(str[i] == str2[i]) ;
+     __JVERIFIER_assert(str2[i] == str3[i]) ;
      i++;
   }
   return 0;
