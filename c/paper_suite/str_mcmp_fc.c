@@ -7,23 +7,23 @@ extern int __VERIFIER_nondet_int();
 int main() {
   int size_a = __VERIFIER_nondet_int();
   int size_b = __VERIFIER_nondet_int();
+  int n = __VERIFIER_nondet_int();
   char a[size_a];
   init(size_a, a);
   char b[size_b];
   init(size_b, b);
-  int v = strcmp(a, b);
+  int v = memcmp(a, b, n);
   if (v == 0){
     int i = 0;
-    while (a[i] != '\0')
+    while (i < n)
     {
        __JVERIFIER_assert(a[i] == b[i]);
        i++;
     }
-    __JVERIFIER_assert(a[i] == b[i] && a[i] == '\0');
   }
   if (v > 0){
       int i = 0;
-      while (a[i] != '\0' && a[i] == b[i])
+      while (a[i] != '\0' && a[i] == b[i] && i < n)
       {
           i++;
       }
@@ -31,12 +31,13 @@ int main() {
   }
   if (v < 0){
       int i = 0;
-      while (a[i] != '\0' && a[i] == b[i])
+      while (a[i] != '\0' && a[i] == b[i] && i < n)
       {
           i++;
       }
       __JVERIFIER_assert(a[i] < b[i]);
   }
+
 
   return 0;
 }

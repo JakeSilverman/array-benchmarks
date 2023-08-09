@@ -2,19 +2,18 @@ extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
 __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
+extern char __VERIFIER_nondet_char();
 #include "string.h"
 
 int main() {
   int size = __VERIFIER_nondet_int();
+  int n = __VERIFIER_nondet_int();
   char str[size];
   init(size, str);
-  char str2[size];
-  stpcpy(str, str2);
-  int i = 0;
-  while (str[i] != '\0')
-  {
-     __JVERIFIER_assert(str[i] == str2[i]) ;
-     i++;
-  }
+  char lookup = __VERIFIER_nondet_char();
+  int len = strlen(str);
+  char* index = memchr(str, lookup, len);
+  char* index2 = strchr(str, lookup);
+  __JVERIFIER_assert(index == index2);
   return 0;
 }

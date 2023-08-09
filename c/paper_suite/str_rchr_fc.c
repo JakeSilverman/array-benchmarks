@@ -14,6 +14,7 @@ int main() {
   int i = 0;
   if (index == NULL)
   {
+    int i = 0;
     while (str[i] != '\0')
     {
       __JVERIFIER_assert(str[i] != lookup);
@@ -21,10 +22,11 @@ int main() {
     }
   }
   else {
-      while (str + i < index)
+      int i = strlen(str) - 1;
+      while (str + i > index)
       {
           __JVERIFIER_assert(str[i] != lookup);
-          i++;
+          i--;
       }
       __JVERIFIER_assert(str[i] == lookup) ;
  

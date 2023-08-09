@@ -7,14 +7,15 @@ extern char __VERIFIER_nondet_char();
 
 int main() {
   int size = __VERIFIER_nondet_int();
+  int n = __VERIFIER_nondet_int();
   char str[size];
   init(size, str);
   char lookup = __VERIFIER_nondet_char();
-  char* index = strchr(str, lookup);
+  char* index = memchr(str, lookup, n);
   int i = 0;
   if (index == NULL)
   {
-    while (str[i] != '\0')
+    while (i < n)
     {
       __JVERIFIER_assert(str[i] != lookup);
       i++;
@@ -26,7 +27,9 @@ int main() {
           __JVERIFIER_assert(str[i] != lookup);
           i++;
       }
-      __JVERIFIER_assert(str[i] == lookup) ;
+      __JVERIFIER_assert(str[i] == lookup);
+      //TODO: following cannot be verified?
+      __JVERIFIER_assert(i <= n);
  
   }
   return 0;

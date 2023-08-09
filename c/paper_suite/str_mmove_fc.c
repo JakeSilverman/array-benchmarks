@@ -5,13 +5,15 @@ extern int __VERIFIER_nondet_int();
 #include "string.h"
 
 int main() {
-  int size = __VERIFIER_nondet_int();
-  char str[size];
-  init(size, str);
-  char str2[size];
-  stpcpy(str, str2);
+  int size_a = __VERIFIER_nondet_int();
+  int size_b = __VERIFIER_nondet_int();
+  int n = __VERIFIER_nondet_int();
+  char str[size_a];
+  init(size_a, str);
+  char str2[size_b];
+  memmove(str2, str, n);
   int i = 0;
-  while (str[i] != '\0')
+  while (i < n)
   {
      __JVERIFIER_assert(str[i] == str2[i]) ;
      i++;

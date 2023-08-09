@@ -9,7 +9,7 @@ int main() {
   char str[size];
   init(size, str);
   char str2[size];
-  stpcpy(str, str2);
+  strcpy(str, str2);
   int i = 0;
   while (str[i] != '\0')
   {
