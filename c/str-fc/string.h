@@ -627,7 +627,6 @@ char *strpbrk(const char *s, const char *b)
 void init(int size, char *dest) {
   for (int i = 0 ; i < size - 1; i++ ) {
     char c = __VERIFIER_nondet_char();
-    assume(c > '\0');
     dest[i] = c;
   }
   dest[size - 1] = '\0';
