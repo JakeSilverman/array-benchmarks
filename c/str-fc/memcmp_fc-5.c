@@ -13,7 +13,7 @@ int main() {
   char b[size_b];
   init(size_b, b);
   int v = memcmp2(a, b, n);
-  if (v < 0){
+  if (v != 0 && n >= 0){
       int i = 0;
       while (a[i] == b[i])
       {

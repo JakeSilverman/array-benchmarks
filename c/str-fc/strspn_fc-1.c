@@ -3,6 +3,7 @@ void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
 __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
 #include "string.h"
+#include <stdbool.h>
 
 int main() {
   int size_a = __VERIFIER_nondet_int();
@@ -22,11 +23,10 @@ int main() {
       while (lst[j] != '\0')
       {
           b = b || str[i] == lst[j];
-          i++;
+          j++;
       }
       __JVERIFIER_assert(b) ;
-
-      
+      i++;
   }
   return 0;
 }

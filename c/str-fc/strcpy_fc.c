@@ -7,7 +7,7 @@ extern int __VERIFIER_nondet_int();
 int main() {
   int size = __VERIFIER_nondet_int();
   char str[size];
-  //init(size, str);
+  init(size, str);
   char str2[size];
   strcpy(str, str2);
   int i = 0;

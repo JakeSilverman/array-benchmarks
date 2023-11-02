@@ -14,13 +14,12 @@ int main() {
   init(size_b, lst);
 
   int index = strspn(str, lst);
-  int i = 0;
   if(str[index] != '\0') {
       int j = 0;
       while (lst[j] != '\0')
       {
-          __JVERIFIER_assert(str[i] != lst[j]) ;
-          i++;
+          __JVERIFIER_assert(str[index] != lst[j]) ;
+          j++;
       }
 
   }

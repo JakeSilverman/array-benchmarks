@@ -1,11 +1,10 @@
-#include "/home/jake/Desktop/seahorn/seahorn/include/seahorn/seahorn.h"
-#include <stdlib.h>
+#include <stdint.h>
 extern char __VERIFIER_nondet_char();
 #define BLK_SIZE 1000
+#define NULL ((void *)0)
 
-void assume_abort_if_not(int cond) {if (!(cond)) abort();}
-//extern void __SEA_assume(bool);
-
+typedef unsigned long long size_t;
+#undef __GNUC__
 #ifdef __GNUC__
 typedef __attribute__((__may_alias__)) size_t WT;
 #define WS (sizeof(WT))
@@ -56,7 +55,7 @@ void *memcpy2(void *restrict dest, const void *restrict src, size_t n)
 {
 	unsigned char *d = dest;
 	const unsigned char *s = src;
-/*
+
 #ifdef __GNUC__
 
 #if __BYTE_ORDER == __LITTLE_ENDIAN
@@ -168,7 +167,6 @@ void *memcpy2(void *restrict dest, const void *restrict src, size_t n)
 	}
 	return dest;
 #endif
-*/
 	for (; n; n--) *d++ = *s++;
 	return dest;
 }

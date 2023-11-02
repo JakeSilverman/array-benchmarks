@@ -10,8 +10,7 @@ int main() {
   char str[size];
   init(size, str);
   char lookup = __VERIFIER_nondet_char();
-  char* index = strchr(str, lookup);
-  int i = 0;
+  char* index = strrchr(str, lookup);
   if (index != NULL)
   {
       int i = strlen(str) - 1;
@@ -20,7 +19,7 @@ int main() {
           __JVERIFIER_assert(str[i] != lookup);
           i--;
       }
-      __JVERIFIER_assert(str[i] == lookup) ;
+      __JVERIFIER_assert(index[0] == lookup) ;
  
   }
   return 0;

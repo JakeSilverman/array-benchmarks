@@ -3,27 +3,26 @@ void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
 __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
 #include "string.h"
+#include <stdbool.h>
 
 int main() {
   int size_a = __VERIFIER_nondet_int();
   int size_b = __VERIFIER_nondet_int();
 
-  char str[size_a];
-  init(size_a, str);
-  char lst[size_b];
-  init(size_b, lst);
+  char haystack[size_a];
+  init(size_a, haystack);
+  char needle[size_b];
+  init(size_b, needle);
 
-  int index = strcspn(str, lst);
+  char* loc = strstr(haystack, needle);
   int i = 0;
-  for(int i = 0; i < index; i++)
-  {
-      int j = 0;
-      while (lst[j] != '\0')
+  if(loc != NULL) {
+      bool b = true;
+      for(int i = 0; i < strlen(needle); i++)
       {
-          __JVERIFIER_assert(str[i] != lst[j]) ;
-          j++;
+          b = b && loc[i] == needle[i];
       }
-      i++;
+      __JVERIFIER_assert(b);
   }
   return 0;
 }

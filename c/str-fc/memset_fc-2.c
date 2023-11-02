@@ -11,14 +11,8 @@ int main() {
   int n = __VERIFIER_nondet_int();
   char str[size_a];
   init(size_a, str);
+  char old = str[n];
   memset2(str, c, n);
-  int i = 0;
-  while (i < n)
-  {
-     __JVERIFIER_assert(str[i] == c);
-     i++;
-  }
-  //TODO: why cant we reason about memset?
-  //TODO: make sure that remainder of str unchanged
+  __JVERIFIER_assert(str[n] == old);
   return 0;
 }

@@ -10,7 +10,7 @@ int main() {
   char str[size];
   init(size, str);
   char lookup = __VERIFIER_nondet_char();
-  char* index = strchr(str, lookup);
+  char* index = strrchr(str, lookup);
   int i = 0;
   if (index == NULL)
   {

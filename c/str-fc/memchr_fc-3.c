@@ -13,7 +13,7 @@ int main() {
   char lookup = __VERIFIER_nondet_char();
   char* index = memchr2(str, lookup, n);
   int i = 0;
-  if (index != NULL)
+  if (index != NULL && n >= 0)
   {
       while (str + i < index)
       {

@@ -10,28 +10,10 @@ int main() {
   int n = __VERIFIER_nondet_int();
   char str[size_a];
   init(size_a, str);
-  char str_og[size_a];
-  strcpy(str_og, str);
   char str2[size_b];
-  init(size_b, str2);
-  strncat(str, str2, n);
-  if strlen(str2) < n {
-      n = strlen(str2);
-  }
-  if(strlen(str_og) + n < size_a) {
-      int i = 0;
-      while (i < strlen(str_og))
-      {
-          i++;
-      }
-      int j = 0;
-      while (j < n)
-      {
-          i++;
-          j++;
-      }
-      __JVERIFIER_assert(str[i] == '\0');
-
-  }
+  char old = str2[n];
+  memmove2(str2, str, n);
+  int i = 0;
+  __JVERIFIER_assert(old == str2[n]) ;
   return 0;
 }

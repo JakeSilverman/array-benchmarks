@@ -13,17 +13,10 @@ int main() {
   char lst[size_b];
   init(size_b, lst);
 
-  int index = strcspn(str, lst);
-  int i = 0;
-  for(int i = 0; i < index; i++)
-  {
-      int j = 0;
-      while (lst[j] != '\0')
-      {
-          __JVERIFIER_assert(str[i] != lst[j]) ;
-          j++;
-      }
-      i++;
+  char* c = strpbrk(str, lst);
+  if (c != NULL) {
+      __JVERIFIER_assert(c - str <= strlen(str));
   }
+
   return 0;
 }
