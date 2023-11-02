@@ -2,7 +2,6 @@ extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
 __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
-extern char __VERIFIER_nondet_char();
 typedef unsigned char __u_char;
 typedef unsigned short int __u_short;
 typedef unsigned int __u_int;
@@ -394,19 +393,15 @@ void init(int size, char *dest) {
 }
 int main() {
   int size = __VERIFIER_nondet_int();
-  int n = __VERIFIER_nondet_int();
   char str[size];
   init(size, str);
-  char lookup = __VERIFIER_nondet_char();
-  char* index = memchr2(str, lookup, n);
+  char str2[size];
+  strcpy(str, str2);
   int i = 0;
-  if (index != ((void *)0) && n >= 0)
+  while (str[i] != '\0')
   {
-      while (str + i < index)
-      {
-          i++;
-      }
-      __JVERIFIER_assert(i <= n);
+     __JVERIFIER_assert(str[i] == str2[i]) ;
+     i++;
   }
   return 0;
 }

@@ -393,20 +393,13 @@ void init(int size, char *dest) {
   dest[size - 1] = '\0';
 }
 int main() {
-  int size = __VERIFIER_nondet_int();
+  int size_a = __VERIFIER_nondet_int();
+  int c = __VERIFIER_nondet_char();
   int n = __VERIFIER_nondet_int();
-  char str[size];
-  init(size, str);
-  char lookup = __VERIFIER_nondet_char();
-  char* index = memchr2(str, lookup, n);
-  int i = 0;
-  if (index != ((void *)0) && n >= 0)
-  {
-      while (str + i < index)
-      {
-          i++;
-      }
-      __JVERIFIER_assert(i <= n);
-  }
+  char str[size_a];
+  init(size_a, str);
+  char old = str[n];
+  memset2(str, c, n);
+  __JVERIFIER_assert(str[n] == old);
   return 0;
 }

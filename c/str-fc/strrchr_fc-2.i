@@ -394,19 +394,19 @@ void init(int size, char *dest) {
 }
 int main() {
   int size = __VERIFIER_nondet_int();
-  int n = __VERIFIER_nondet_int();
   char str[size];
   init(size, str);
   char lookup = __VERIFIER_nondet_char();
-  char* index = memchr2(str, lookup, n);
-  int i = 0;
-  if (index != ((void *)0) && n >= 0)
+  char* index = strrchr(str, lookup);
+  if (index != ((void *)0))
   {
-      while (str + i < index)
+      int i = strlen(str) - 1;
+      while (str + i > index)
       {
-          i++;
+          __JVERIFIER_assert(str[i] != lookup);
+          i--;
       }
-      __JVERIFIER_assert(i <= n);
+      __JVERIFIER_assert(index[0] == lookup) ;
   }
   return 0;
 }
