@@ -7,15 +7,15 @@ extern char __VERIFIER_nondet_char();
 
 int main() {
   int size = __VERIFIER_nondet_int();
-  char a[size];
-  char b[size];
-  init(size, a);
-  init(size, b);
-  char lookup = __VERIFIER_nondet_char();
-  char* pa = strchr(a, lookup);
-  char* pb = strchr(b, lookup);
-  if(strcmp(a, b) == 0) { 
-      __JVERIFIER_assert(pa == '\0' && pb == '\0' || pa- a == pb - b) ;
-  }
+  char str1[size];
+  init(size, src);
+  char chars1[size*2];
+  char chars2[size];
+  init(size, chars1);
+  init(size, char2); 
+  size_t span1 = strchr(str1, chars1);
+  chars1 = strcat(chars1, chars2);
+  size_t span2 = strchr(str1, chars1);
+  __JVERIFIER_assert(span1 >= span2) ;
   return 0;
 }

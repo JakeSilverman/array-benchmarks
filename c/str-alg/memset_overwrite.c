@@ -2,7 +2,7 @@ extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
 __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
-#include "../str-fc/string.h"
+#include "string.h"
 
 int main() {
   int size = __VERIFIER_nondet_int();

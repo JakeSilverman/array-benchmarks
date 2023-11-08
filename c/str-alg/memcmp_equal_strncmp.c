@@ -3,7 +3,8 @@ void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
 __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
 extern char __VERIFIER_nondet_char();
-#include "../str-fc/string.h"
+#include "string.h"
+//strncmp(a, b, n) = memcmp(a, b, n)
 
 int main() {
     int size_a = __VERIFIER_nondet_int();

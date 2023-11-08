@@ -3,7 +3,7 @@ void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
     __VERIFIER_error(); 
 } }
 extern int __VERIFIER_nondet_int();
-#include "../str-fc/string.h"
+#include "string.h"
 
 
 int main() {
@@ -15,7 +15,7 @@ int main() {
     init(size, b);
     char* index = strrchr(a, ch); 
     strcat(a, b);
-    if(index != '\0') {
+    if(index != NULL) {
         __JVERIFIER_assert(strchr(a, ch) - a - strlen(a)  == index - b);
     }
     return 0;

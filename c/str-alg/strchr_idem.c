@@ -6,16 +6,15 @@ extern char __VERIFIER_nondet_char();
 #include "string.h"
 
 int main() {
-    int size = __VERIFIER_nondet_int();
-    char a[size];
-    init(size, a);
-    char dst1[size];
-    char dst2[size];
-    size_t n = strlen(a);
-    memcpy2(dst1, a, n);
-    strcpy(dst2, a);
-    for(int i = 0; i < n; i++) {
-       __JVERIFIER_assert(dst1[i] == dst2[i]);
+    int size_a = __VERIFIER_nondet_int();
+    char a[size_a];
+    init(size_a, a);
+    char lookup = __VERIFIER_nondet_char();
+    char* f = strchr(a, lookup);
+    if(f != '\0') {
+        char* fn = strchr(f, lookup);
+        __JVERIFIER_assert(f == fn) ;
+
     }
     return 0;
 }

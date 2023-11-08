@@ -7,18 +7,19 @@ extern char __VERIFIER_nondet_char();
 
 int main() {
     int size_a = __VERIFIER_nondet_int();
-    int size_b = __VERIFIER_nondet_int();
     char a[size_a];
     init(size_a, a);
-    char b[size_b];
-    init(size_b, b);
-    int n;
-    if (strlen(a) > strlen(b))
-        n = strlen(a);
-    else
-        n = strlen(b);
-    int v1 = strcmp(a, b);
-    int v2 = strncmp(a, b, n);
-    __JVERIFIER_assert(v1 == v2);
+    char lookup = __VERIFIER_nondet_char();
+    char* f = strchr(a, lookup);
+    char* l = strchr(a, lookup);
+    if(f == l && f != '\0') {
+        for(int i = 0; i < strlen(a); i++)
+        {
+            if(i != f - a) {
+                __JVERIFIER_assert(a[i] != lookup) ;
+            }
+        }
+
+    }
     return 0;
 }

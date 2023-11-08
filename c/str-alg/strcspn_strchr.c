@@ -7,17 +7,16 @@ extern char __VERIFIER_nondet_char();
 
 int main() {
   int size = __VERIFIER_nondet_int();
-  size_t n1 = __VERIFIER_nondet_int();
-  size_t n2 = __VERIFIER_nondet_int();
   char str[size];
-  char dst[size];
   init(size, str);
-  char lookup = __VERIFIER_nondet_char();
-  char set = __VERIFIER_nondet_char();
-  memset2(str, set, n1);
-  if(set == lookup && n1 >= n2 && n2 > 0) {
-      char* index = memchr2(str, lookup, n2);
-      __JVERIFIER_assert(index == str);
+  char chars[size];
+  int lookup = __VERIFIER_nondet_char();
+  chars[0] = lookup;
+  chars[1] = '\0';
+  size_t span = strcspn(str, chars);
+  char* index = strchr(str, lookup);
+  if(index != NULL) {
+      __JVERIFIER_assert(span == index - str) ;
   }
   return 0;
 }

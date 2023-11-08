@@ -3,7 +3,7 @@ void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
     __VERIFIER_error(); 
 } }
 extern int __VERIFIER_nondet_int();
-#include "../str-fc/string.h"
+#include "string.h"
 
 
 int main() {
