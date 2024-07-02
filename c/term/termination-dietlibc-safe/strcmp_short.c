@@ -13,9 +13,14 @@ void __JVERIFIER_assertt(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } 
 #define WANT_SMALL_STRING_ROUTINES
 
 int strcmp (const char *s1, const char *s2) {
+   int tick = 0;
 #ifdef WANT_SMALL_STRING_ROUTINES
     while (*s1 && *s1 == *s2)
-        s1++, s2++;
+    {    
+	s1++, s2++;
+        tick = tick + 1;
+        if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
+    }
     return (*s1 - *s2);
 #else
     const unsigned long *lx1, *lx2;
@@ -23,7 +28,11 @@ int strcmp (const char *s1, const char *s2) {
     int             tmp;
 
     if (UNALIGNED(s1, s2)) {
-        while (*s1 && *s1 == *s2) s1++, s2++;
+        while (*s1 && *s1 == *s2){ 
+            s1++, s2++;
+            tick = tick + 1;
+            if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
+        }
         return (*s1 - *s2);
     }
 
@@ -36,12 +45,16 @@ int strcmp (const char *s1, const char *s2) {
     lx2 = (unsigned long *) s2;
 
     while (1) {
+        tick = tick + 1;
+        if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
         l1 = *lx1++;
         l2 = *lx2++;
         if ((((l1 - MKW(0x1ul)) & ~l1) & MKW(0x80ul)) ||
             ((((l2 - MKW(0x1ul)) & ~l2) & MKW(0x80ul))) || l1 != l2) {
             unsigned char c1, c2;
             while (1) {
+                tick = tick + 1;
+                if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
 		c1 = GFC(l1);
                 c2 = GFC(l2);
                 if (!c1 || c1 != c2)
@@ -58,15 +71,18 @@ int main(){
   int in_len = __VERIFIER_nondet_int();
   if(in_len < 1){return 1;}
   char* in = alloca(in_len);
+  int tick = 0;
+
   for(int i=0; i<in_len-1; i++)
   {
     in[i] = __VERIFIER_nondet_char();
+    tick = tick + 1;
+    if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
   }
   in[in_len-1]=0;
   int out_len = __VERIFIER_nondet_int();
   if(out_len < 1){return 1;}
   char* out = alloca(out_len);
-  int tick = 0;
 
   for(int i=0; i<out_len-1; i++)
   {

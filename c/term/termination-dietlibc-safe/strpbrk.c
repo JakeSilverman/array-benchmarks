@@ -17,9 +17,11 @@ char *strpbrk(const char *s, const char *accept) {
   for (; *s; s++){
     tick = tick + 1;
     if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
-    for (i=0; accept[i]; i++)
+    for (i=0; accept[i]; i++){
+      tick = tick + 1;
+      if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
       if (*s == accept[i])
-	return (char*)s;}
+	return (char*)s;}}
   return 0;
 }
 

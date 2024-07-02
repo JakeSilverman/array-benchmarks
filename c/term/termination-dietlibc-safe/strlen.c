@@ -15,7 +15,8 @@ size_t strlen(const char *s) {
   int tick = 0;
 
   if (__unlikely(!s)) return 0;
-  for (i=0; __likely(*s); ++s) {++i;
+  for (i=0; __likely(*s); ++s) {
+    ++i;
     tick = tick + 1;
     if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
   }

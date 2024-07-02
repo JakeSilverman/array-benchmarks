@@ -19,8 +19,11 @@ size_t strcspn(const char *s, const char *reject)
   for (; *s; ++s) {
     tick = tick + 1;
     if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
-    for (i=0; reject[i]; ++i)
+    for (i=0; reject[i]; ++i){
+      tick = tick + 1;
+      if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
       if (*s==reject[i]) return l;
+    }
     ++l;
   }
   return l;

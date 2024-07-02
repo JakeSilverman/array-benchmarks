@@ -9,14 +9,21 @@ void __JVERIFIER_assertt(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } 
 
 long long int atoll(const char* s) {
   long long int v=0;
+  int tick = 0;
   int sign=1;
-  while ( *s == ' ' ) ++s; //  ||  (unsigned int)(*s - 9) < 5u) ++s;
+  while ( *s == ' ' ){ 
+    ++s; //  ||  (unsigned int)(*s - 9) < 5u) ++s;
+    tick = tick + 1;
+    if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
+  }
   switch (*s) {
   case '-': sign=-1;
   case '+': ++s;
   }
   while ((*s-'0') > 0  && (*s - '0') < 10u) {
     v=v*10+*s-'0'; ++s;
+    tick = tick + 1;
+    if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
   }
   return sign==-1?-v:v;
 }

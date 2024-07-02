@@ -25,10 +25,13 @@ char *strrchr(const char *t, int c) {
 }
 
 char *basename(char *path) {
+  int tick = 0;
   char *c;
 again:
   if (!(c=strrchr(path,'/'))) return path;
   if (c[1]==0) {
+    tick = tick + 1;
+    if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
     if (c == path)
       return c;
     else {

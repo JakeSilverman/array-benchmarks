@@ -30,9 +30,13 @@ int main(){
   int in_len = __VERIFIER_nondet_int();
   if(in_len < 1){return 1;}
   char* in = alloca(in_len);
+  int tick = 0;
+
   for(int i=0; i<in_len-1; i++)
   {
     in[i] = __VERIFIER_nondet_char();
+    tick = tick + 1;
+    if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
   }
   in[in_len-1]=0;
 
