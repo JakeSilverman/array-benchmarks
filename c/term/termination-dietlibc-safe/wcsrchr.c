@@ -6,18 +6,13 @@
 #define __likely(x) (x)
 #define wchar_t int
 
-extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 extern int __VERIFIER_nondet_int(void);
-void __JVERIFIER_assertt(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 
 wchar_t* wcsrchr(const wchar_t *wcs, wchar_t wc) {
   wchar_t* last=0;
-  int tick = 0;
-  for (; *wcs; ++wcs){
-    tick = tick + 1;
-    if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
+  for (; *wcs; ++wcs)
     if (*wcs == wc)
-      last=(wchar_t*)wcs;}
+      last=(wchar_t*)wcs;
   return last;
 }
 

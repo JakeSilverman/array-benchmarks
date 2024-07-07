@@ -6,17 +6,12 @@
 #define __likely(x) x
 
 
-extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 extern int __VERIFIER_nondet_int(void);
-void __JVERIFIER_assertt(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
+
 
 char * strcpy (char *s1, const char *s2) {
-    int tick = 0;
     char           *res = s1;
-    while ((*s1++ = *s2++))
-    {    tick = tick + 1;
-         if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);
-    }
+    while ((*s1++ = *s2++));
     return (res);
 }
 

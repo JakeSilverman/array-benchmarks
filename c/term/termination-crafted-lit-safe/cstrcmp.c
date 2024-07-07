@@ -6,9 +6,7 @@ typedef long unsigned int size_t;
 
 void * __attribute__((__cdecl__)) malloc (size_t __size) ;
 
-extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 extern int __VERIFIER_nondet_int(void);
-void __JVERIFIER_assertt(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 
 /* Returns some null-terminated string. */
 char* build_nondet_String(void) {
@@ -31,12 +29,9 @@ int (cstrcmp)(const char *s1, const char *s2)
      /* Move s1 and s2 to the first differing characters 
         in each string, or the ends of the strings if they
         are identical.  */
-     int tick = 0;
      while (*s1 != '\0' && *s1 == *s2) {
          s1++;
          s2++;
-	 tick = tick + 1;
-	 if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
      }
      /* Compare the characters as unsigned char and
         return the difference.  */

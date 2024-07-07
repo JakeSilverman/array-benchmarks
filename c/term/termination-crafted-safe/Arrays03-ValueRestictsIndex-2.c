@@ -6,14 +6,12 @@
  *
  */
 
-extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 extern int __VERIFIER_nondet_int(void);
-void __JVERIFIER_assertt(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 
 int main() {
 	int k = __VERIFIER_nondet_int();
 	int a[1048];
- 	int tick = 0;
+ 
   for (int i = 0; i < 1048; i++) {
     a[i] = __VERIFIER_nondet_int();
   }
@@ -23,8 +21,6 @@ int main() {
 			int x = __VERIFIER_nondet_int();
 			while(x >=0) {
 				x = x - k;
-				tick = tick + 1;
-				if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
 			}
 		}
 	}

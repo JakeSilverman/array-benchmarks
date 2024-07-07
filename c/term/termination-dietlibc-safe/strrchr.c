@@ -6,20 +6,15 @@
 #define __likely(x) x
 
 
-extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 extern int __VERIFIER_nondet_int(void);
-void __JVERIFIER_assertt(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }extern char __VERIFIER_nondet_char(void);
+extern char __VERIFIER_nondet_char(void);
 
 char *strrchr(const char *t, int c) {
   register char ch;
   register const char *l=0;
 
   ch = c;
-  int tick = 0;
-
   for (;;) {
-    tick = tick + 1;
-    if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
     if (__unlikely(*t == ch)) l=t; if (__unlikely(!*t)) return (char*)l; ++t;
 #ifndef WANT_SMALL_STRING_ROUTINES
     if (__unlikely(*t == ch)) l=t; if (__unlikely(!*t)) return (char*)l; ++t;
@@ -34,12 +29,9 @@ int main(){
   int in_len = __VERIFIER_nondet_int();
   if(in_len < 1){return 1;}
   char* in = alloca(in_len);
-  int tick = 0;
   for(int i=0; i<in_len-1; i++)
   {
     in[i] = __VERIFIER_nondet_char();
-    tick = tick + 1;
-    if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
   }
   in[in_len-1]=0;
   int the_int = __VERIFIER_nondet_int();

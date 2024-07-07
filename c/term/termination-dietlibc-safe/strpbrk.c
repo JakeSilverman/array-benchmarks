@@ -6,22 +6,14 @@
 #define __likely(x) x
 
 
-extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 extern int __VERIFIER_nondet_int(void);
-void __JVERIFIER_assertt(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 
 char *strpbrk(const char *s, const char *accept) {
   register unsigned int i;
-  int tick = 0;
-
-  for (; *s; s++){
-    tick = tick + 1;
-    if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
-    for (i=0; accept[i]; i++){
-      tick = tick + 1;
-      if(__VERIFIER_nondet_int()) {__JVERIFIER_assertt (tick < 10000000);}
+  for (; *s; s++)
+    for (i=0; accept[i]; i++)
       if (*s == accept[i])
-	return (char*)s;}}
+	return (char*)s;
   return 0;
 }
 
