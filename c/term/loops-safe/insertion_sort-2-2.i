@@ -1,0 +1,40 @@
+# 0 "c/term/loops-safe//insertion_sort-2-2.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 0 "<command-line>" 2
+# 1 "c/term/loops-safe//insertion_sort-2-2.c"
+extern void abort(void);
+extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+void reach_error() { __assert_fail("0", "insertion_sort-2-2.c", 3, "reach_error"); }
+
+void __VERIFIER_assert(int cond) {
+  if (!(cond)) {
+    ERROR: {reach_error();abort();}
+  }
+  return;
+}
+unsigned int __VERIFIER_nondet_uint();
+extern int __VERIFIER_nondet_int();
+int main() {
+   unsigned int SIZE=__VERIFIER_nondet_uint();
+   if (SIZE >= 4000000000 / sizeof(int)) {
+     return 0;
+   }
+   int i, j, k, key;
+   int v[SIZE];
+   for (j=0;j<SIZE;j++)
+      v[j] = __VERIFIER_nondet_int();
+   for (j=1;j<SIZE;j++) {
+      key = v[j];
+      i = j - 1;
+      while((i>=0) && (v[i]>key)) {
+         v[i+1] = v[i];
+         i = i - 1;
+      }
+      v[i+1] = key;
+  }
+  for (k=1;k<SIZE;k++)
+    __VERIFIER_assert(v[k-1]<=v[k]);
+   return 0;
+}

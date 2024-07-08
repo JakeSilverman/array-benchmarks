@@ -1,0 +1,44 @@
+# 0 "c/term/bitvector-loops-safe//verisec_sendmail_tTflag_arr_one_loop.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 0 "<command-line>" 2
+# 1 "c/term/bitvector-loops-safe//verisec_sendmail_tTflag_arr_one_loop.c"
+extern void abort(void);
+extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+void reach_error() { __assert_fail("0", "verisec_sendmail_tTflag_arr_one_loop.c", 3, "reach_error"); }
+
+extern char __VERIFIER_nondet_char();
+
+void __VERIFIER_assert(int cond) {
+  if (!(cond)) {
+    ERROR: {reach_error();abort();}
+  }
+  return;
+}
+
+int main (void)
+{
+  char in[11];
+  char *s;
+  unsigned char c;
+  int i, j;
+  int idx_in;
+  for (i = 0; i < 11; i++)
+    in[i] = __VERIFIER_nondet_char();
+  in[10] = 0;
+  idx_in = 0;
+  s = in;
+  i = 0;
+  c = in[idx_in];
+  while (('0' <= c) && (c <= '9'))
+  {
+    j = c - '0';
+    i = i * 10U + j;
+    idx_in++;
+    c = in[idx_in];
+  }
+
+  __VERIFIER_assert (i >= 0);
+  return 0;
+}
