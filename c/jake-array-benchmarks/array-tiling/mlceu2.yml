@@ -1,11 +1,10 @@
 format_version: '1.0'
 
-# old file name: mlceu_false-unreach-call.c
-input_files: 'mlceu.c'
+input_files: 'mlceu2.c'
 
 properties:
   - property_file: ../properties/unreach-call.prp
-    expected_verdict: false
+    expected_verdict: true
   - property_file: ../properties/coverage-error-call.prp
   - property_file: ../properties/coverage-branches.prp
   - property_file: ../properties/coverage-conditions.prp
