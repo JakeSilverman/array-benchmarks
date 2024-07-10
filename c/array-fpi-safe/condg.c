@@ -12,7 +12,9 @@ extern void abort(void);
 void assume_abort_if_not(int cond) {
   if(!cond) {abort();}
 }
-void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();abort();} } }
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 extern int __VERIFIER_nondet_int(void);
 void* malloc(unsigned int size);
 
@@ -50,7 +52,7 @@ int main()
 
 	for(i=0; i<N; i++)
 	{
-		__VERIFIER_assert(a[i] == 0);
+		__JVERIFIER_assert(a[i] == 0);
 	}
 	return 1;
 }
