@@ -1,17 +1,31 @@
+# 0 "./array-industry-pattern-safe/array_ptr_single_elem_init-1.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 0 "<command-line>" 2
+# 1 "./array-industry-pattern-safe/array_ptr_single_elem_init-1.c"
 typedef unsigned int size_t;
 extern void *malloc (size_t __size) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__malloc__)) ;
 extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 extern int __VERIFIER_nondet_int(void);
 void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
+
+
+
 struct S
 {
  int *p;
  int n;
 };
+
 struct S *a[100000];
+
 int main()
 {
+
  int i;
+
+
  for (i = 0; i < 100000; i++)
  {
   int q = __VERIFIER_nondet_int();
@@ -32,9 +46,13 @@ int main()
     s->p = (void *)0;
    }
   }
+
   a[i] = s;
  }
+
  a[3] = (struct S*) malloc(sizeof(struct S));
+
+
  for (i = 0; i < 100000; i++)
  {
   struct S *s1 = a[i];

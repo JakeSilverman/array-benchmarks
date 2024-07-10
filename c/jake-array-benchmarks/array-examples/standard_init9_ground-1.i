@@ -1,5 +1,14 @@
+# 0 "./array-examples/standard_init9_ground-1.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 0 "<command-line>" 2
+# 1 "./array-examples/standard_init9_ground-1.c"
 extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
+
+
+
 int main ( ) {
   int a [100000];
   int i = 0;
@@ -47,6 +56,7 @@ int main ( ) {
     a[i] = 50;
     i = i + 1;
   }
+
   int x;
   for ( x = 0 ; x < 100000 ; x++ ) {
     __JVERIFIER_assert( a[x] == 49 );

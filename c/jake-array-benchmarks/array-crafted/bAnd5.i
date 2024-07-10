@@ -1,6 +1,12 @@
+# 0 "./array-crafted/bAnd5.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 0 "<command-line>" 2
+# 1 "./array-crafted/bAnd5.c"
 
 
-extern void abort(void); 
+extern void abort(void);
 void reach_error(){}
 extern int __VERIFIER_nondet_int(void);
 
@@ -26,13 +32,13 @@ int main ()
     int ret;
     int ret2;
     int ret5;
-		
-		for(int i = 0; i < N; i++) 
-		{
-		  x[i] = __VERIFIER_nondet_int();
-		}
 
-    ret = bAnd(x);
+   for(int i = 0; i < N; i++)
+  {
+    x[i] = __VERIFIER_nondet_int();
+  }
+
+  ret = bAnd(x);
 
     temp=x[0];x[0] = x[1]; x[1] = temp;
     ret2 = bAnd(x);

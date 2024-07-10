@@ -1,7 +1,13 @@
+# 0 "./array-examples-safe/sanfoundry_02_ground.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 0 "<command-line>" 2
+# 1 "./array-examples-safe/sanfoundry_02_ground.c"
 extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR: __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
-
+# 13 "./array-examples-safe/sanfoundry_02_ground.c"
 int main()
 {
     int array[100000];
@@ -9,14 +15,17 @@ int main()
     int largest1;
     int largest2;
     int temp;
-		
-		for(i = 0; i < 100000; i++) 
-		{
-		  array[i] = __VERIFIER_nondet_int();
-		}
-		
+
+  for(i = 0; i < 100000; i++)
+  {
+    array[i] = __VERIFIER_nondet_int();
+  }
+
+
     largest1 = array[0];
+
     largest2 = array[1];
+
     if (largest1 < largest2)
     {
         temp = largest1;
@@ -35,6 +44,7 @@ int main()
             largest2 = array[i];
         }
     }
+
     int x;
     for( x = 0 ; x < 100000 ; x++ ) {
       __JVERIFIER_assert( array[ x ] <= largest1 );
