@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 // Source: Thomas A. Henzinger, Thibaud Hottelier, Laura Kovacs: "Valigator:
 // A verification Tool with Bound and Invariant Generation", LPAR 2008
 
@@ -15,6 +18,6 @@ int main() {
 	cnt = cnt - 1;
 	res = res + 1;
     }
-    __VERIFIER_assert(res == a + b);
+    __JVERIFIER_assert(res == a + b);
     return 0;
 }

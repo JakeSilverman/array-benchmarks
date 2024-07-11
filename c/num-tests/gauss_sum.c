@@ -1,4 +1,7 @@
 #include "assert.h"
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 
 int main() {
     int n, sum, i;
@@ -8,6 +11,6 @@ int main() {
     for(i = 1; i <= n; i++) {
         sum = sum + i;
     }
-    __VERIFIER_assert(2*sum == n*(n+1));
+    __JVERIFIER_assert(2*sum == n*(n+1));
     return 0;
 }

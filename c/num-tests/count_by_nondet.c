@@ -1,4 +1,7 @@
 #include "assert.h"
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 int main() {
     int i = 0;
     int k = 0;
@@ -8,6 +11,6 @@ int main() {
         i = i + j;
         k ++;
     }
-    __VERIFIER_assert(k <= LARGE_INT);
+    __JVERIFIER_assert(k <= LARGE_INT);
     return 0;
 }

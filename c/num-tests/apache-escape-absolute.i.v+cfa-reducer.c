@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 int __return_main;
 void abort(void);
 extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
@@ -6,7 +9,7 @@ void abort(void);
 void assume_abort_if_not(int cond) {
   if(!cond) {abort();}
 }
-void __VERIFIER_assert(int cond);
+void __JVERIFIER_assert(int cond);
 int __VERIFIER_nondet_int();
 int main();
 int __return_375;
@@ -78,9 +81,9 @@ int __return_375;
  {
  int __tmp_1;
  __tmp_1 = (main__cp - 1) < main__urilen;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_1;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_1;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -90,9 +93,9 @@ int __return_375;
  {
  int __tmp_2;
  __tmp_2 = 0 <= (main__cp - 1);
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_2;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_2;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -106,9 +109,9 @@ int __return_375;
  {
  int __tmp_3;
  __tmp_3 = main__cp < main__urilen;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_3;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_3;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -118,9 +121,9 @@ int __return_375;
  {
  int __tmp_4;
  __tmp_4 = 0 <= main__cp;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_4;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_4;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -138,9 +141,9 @@ int __return_375;
  {
  int __tmp_5;
  __tmp_5 = main__cp < main__urilen;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_5;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_5;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -150,9 +153,9 @@ int __return_375;
  {
  int __tmp_6;
  __tmp_6 = 0 <= main__cp;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_6;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_6;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -170,9 +173,9 @@ int __return_375;
  {
  int __tmp_7;
  __tmp_7 = (main__cp + 1) < main__urilen;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_7;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_7;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -182,9 +185,9 @@ int __return_375;
  {
  int __tmp_8;
  __tmp_8 = 0 <= (main__cp + 1);
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_8;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_8;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -207,9 +210,9 @@ int __return_375;
  {
  int __tmp_9;
  __tmp_9 = main__cp < main__urilen;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_9;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_9;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -219,9 +222,9 @@ int __return_375;
  {
  int __tmp_10;
  __tmp_10 = 0 <= main__cp;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_10;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_10;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -236,9 +239,9 @@ int __return_375;
  {
  int __tmp_11;
  __tmp_11 = main__cp < main__urilen;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_11;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_11;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -248,9 +251,9 @@ int __return_375;
  {
  int __tmp_12;
  __tmp_12 = 0 <= main__cp;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_12;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_12;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -265,9 +268,9 @@ int __return_375;
  {
  int __tmp_13;
  __tmp_13 = main__c < main__tokenlen;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_13;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_13;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -277,9 +280,9 @@ int __return_375;
  {
  int __tmp_14;
  __tmp_14 = 0 <= main__c;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_14;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_14;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -289,9 +292,9 @@ int __return_375;
  {
  int __tmp_15;
  __tmp_15 = main__cp < main__urilen;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_15;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_15;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -301,9 +304,9 @@ int __return_375;
  {
  int __tmp_16;
  __tmp_16 = 0 <= main__cp;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_16;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_16;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -367,9 +370,9 @@ int __return_375;
  {
  int __tmp_17;
  __tmp_17 = main__cp < main__urilen;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_17;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_17;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;
@@ -379,9 +382,9 @@ int __return_375;
  {
  int __tmp_18;
  __tmp_18 = 0 <= main__cp;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_18;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_18;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;

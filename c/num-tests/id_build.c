@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 // from FreePastry source, file Id.java
   /**
    * Constructor, which takes the output of a toStringFull() and converts it back
@@ -26,8 +29,8 @@ int main() {
   
   for (i=0; i<nlen; i++) {
     for (j=0; j<8; j++) {
-      __VERIFIER_assert(0 <= nlen-1-i);
-      __VERIFIER_assert(nlen-1-i < nlen);
+      __JVERIFIER_assert(0 <= nlen-1-i);
+      __JVERIFIER_assert(nlen-1-i < nlen);
     }
   }
   return 0;

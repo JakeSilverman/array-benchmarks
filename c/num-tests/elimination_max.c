@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 extern void *calloc(unsigned int nmemb, unsigned int size);
 extern void free(void *);
 extern void abort(void);
@@ -40,10 +43,10 @@ int main() {
 
     i = __VERIFIER_nondet_int();
     assume_abort_if_not(0 <= i && i < n);
-    __VERIFIER_assert(a[i] <= a[x]);
+    __JVERIFIER_assert(a[i] <= a[x]);
 
     for(i=0; i<n; i++) {
-        __VERIFIER_assert(a[i] <= a[x]);
+        __JVERIFIER_assert(a[i] <= a[x]);
     }
     free(a);
 

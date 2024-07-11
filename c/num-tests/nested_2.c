@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 // This file is part of the SV-Benchmarks collection of verification tasks:
 // https://github.com/sosy-lab/sv-benchmarks
 //

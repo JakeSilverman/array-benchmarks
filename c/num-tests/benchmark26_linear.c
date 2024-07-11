@@ -1,4 +1,7 @@
 #include <assert.h>
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 void reach_error(void) {assert(0);}
 
 extern int __VERIFIER_nondet_int(void);
@@ -25,6 +28,6 @@ int main() {
   while (x<y) {
     x=x+1;
   }
-  __VERIFIER_assert(x==y);
+  __JVERIFIER_assert(x==y);
   return 0;
 }

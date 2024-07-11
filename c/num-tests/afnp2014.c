@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 // Source: E. De Angelis, F. Fioravanti, J. A. Navas, M. Proietti:
 // "Verification of Programs by Combining Iterated Specialization with
 // Interpolation", HCVS 2014
@@ -11,6 +14,6 @@ int main() {
         x = x + y;
         y = y + 1;
     }
-    __VERIFIER_assert(x >= y);
+    __JVERIFIER_assert(x >= y);
     return 0;
 }

@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 // Source: Dirk Beyer, Thomas A. Henzinger, Rupak Majumdar, Andrey
 // Rybalchenko: "Path Invariants", PLDI 2007.
 
@@ -16,6 +19,6 @@ int main() {
         }
         i = i + 1;
     }
-    __VERIFIER_assert(a + b == 3*n);
+    __JVERIFIER_assert(a + b == 3*n);
     return 0;
 }

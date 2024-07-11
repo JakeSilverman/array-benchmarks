@@ -1,4 +1,7 @@
 #include "assert.h"
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 
 int main()
 {
@@ -37,8 +40,8 @@ int main()
     goto END;
 
   for (i = 0; i < ielen && bufsize > 2; i++) {
-    __VERIFIER_assert(0<=p);
-    __VERIFIER_assert(p+1<bufsize_0);
+    __JVERIFIER_assert(0<=p);
+    __JVERIFIER_assert(p+1<bufsize_0);
       //    *p = 'x';
       //    *(p+1) = 'x';
     p += 2;

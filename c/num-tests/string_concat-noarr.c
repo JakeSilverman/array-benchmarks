@@ -1,4 +1,7 @@
 #include "assert.h"
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 
 int main(void) {
   int i, j;
@@ -18,6 +21,6 @@ int main(void) {
     j++;
   }
   if(j >= 100) goto STUCK; // assume( j < 100 );
-  __VERIFIER_assert( i < 200 ); /* prove we don't overflow z */
+  __JVERIFIER_assert( i < 200 ); /* prove we don't overflow z */
   return 0;
 }

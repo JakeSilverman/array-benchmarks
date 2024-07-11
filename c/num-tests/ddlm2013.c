@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 // Source: Isil Dillig, Thomas Dillig, Boyang Li, Ken McMillan: "Inductive
 // Invariant Generation via Abductive Inference", OOPSLA 2013.
 
@@ -26,7 +29,7 @@ int main() {
         }
     }
     if (flag) {
-        __VERIFIER_assert(a == b);
+        __JVERIFIER_assert(a == b);
     }
     return 0;
 }

@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 int SIZE = 40000; 
 
 
@@ -24,6 +27,6 @@ int main() {
       i = i + 1; 
       sum += i;
   }
-  __VERIFIER_assert( sum == ((SIZE *(SIZE+1))/2));
+  __JVERIFIER_assert( sum == ((SIZE *(SIZE+1))/2));
   return 0;
 }

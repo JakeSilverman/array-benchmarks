@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 // Source: A. Costan, S. Gaubert, E. Goubault, M. Martel, S. Putot: "A Policy
 // Iteration Algorithm for Computing Fixed Points in Static Analysis of
 // Programs", CAV 2005
@@ -12,6 +15,6 @@ int main() {
         i = i + 2;
         j = -1 + j;
     }
-    __VERIFIER_assert(j == 6);
+    __JVERIFIER_assert(j == 6);
     return 0;
 }

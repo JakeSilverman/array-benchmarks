@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 extern void abort(void);
 #include <assert.h>
 void reach_error() { assert(0); }
@@ -28,7 +31,7 @@ int main() {
         }
     }
 
-    __VERIFIER_assert(y<=0 || (y>0 && x>=100));
+    __JVERIFIER_assert(y<=0 || (y>0 && x>=100));
 
     return 0;
 }

@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 /*
  * Variant: This one just blindly copies the input into buffer and writes '>''\0' at the end.
  */
@@ -25,22 +28,22 @@ int main ()
   {
     if (buf == buflim)
       break;
-    __VERIFIER_assert(0<=buf);
-    __VERIFIER_assert(buf<bufferlen); 
+    __JVERIFIER_assert(0<=buf);
+    __JVERIFIER_assert(buf<bufferlen); 
     buf++;
 out:
     in++;
-    __VERIFIER_assert(0<=in);
-    __VERIFIER_assert(in<inlen);
+    __JVERIFIER_assert(0<=in);
+    __JVERIFIER_assert(in<inlen);
   }
 
-    __VERIFIER_assert(0<=buf);
-    __VERIFIER_assert(buf<bufferlen);
+    __JVERIFIER_assert(0<=buf);
+    __JVERIFIER_assert(buf<bufferlen);
     buf++;
 
   /* OK */
-  __VERIFIER_assert(0<=buf);//6
-  __VERIFIER_assert(buf<bufferlen);
+  __JVERIFIER_assert(0<=buf);//6
+  __JVERIFIER_assert(buf<bufferlen);
 
   buf++;
 

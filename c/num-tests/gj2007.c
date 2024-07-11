@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 // Source: Sumit Gulwani, Nebosja Jojic: "Program Verification as
 // Probabilistic Inference", POPL 2007.
 
@@ -14,6 +17,6 @@ int main() {
 	    y = y + 1;
 	}
     }
-    __VERIFIER_assert(y == 100);
+    __JVERIFIER_assert(y == 100);
     return 0;
 }

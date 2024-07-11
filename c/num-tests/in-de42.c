@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 extern void abort(void);
 extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
 void reach_error() { __assert_fail("0", "in-de42.c", 3, "reach_error"); }
@@ -38,6 +41,6 @@ int main()
     z++;
   }
 
-  __VERIFIER_assert(z==2*n);
+  __JVERIFIER_assert(z==2*n);
   return 0;
 }

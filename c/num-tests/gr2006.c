@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 // Source: Denis Gopan, Thomas Reps: "Lookahead Widening", CAV 2006.
 
 #include "assert.h"
@@ -15,6 +18,6 @@ int main() {
         if (y < 0) break;
         x++;
     }
-    __VERIFIER_assert(x == 100);
+    __JVERIFIER_assert(x == 100);
     return 0;
 }

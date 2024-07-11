@@ -1,9 +1,12 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 int __return_main;
 void abort(void);
 extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
 void reach_error() { __assert_fail("0", "mod3.c.v+lhb-reducer.c", 4, "reach_error"); }
 int __VERIFIER_nondet_int();
-void __VERIFIER_assert(int cond);
+void __JVERIFIER_assert(int cond);
 int main();
 int __tmp_112_0;
 int __tmp_94_0;
@@ -92,9 +95,9 @@ int __return_121;
  {
  int __tmp_1;
  __tmp_1 = (main__x % 3) == 0;
- int __VERIFIER_assert__cond;
- __VERIFIER_assert__cond = __tmp_1;
- if (__VERIFIER_assert__cond == 0)
+ int __JVERIFIER_assert__cond;
+ __JVERIFIER_assert__cond = __tmp_1;
+ if (__JVERIFIER_assert__cond == 0)
  {
  {reach_error();}
  return __return_main;

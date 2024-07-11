@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 // Source: Credited to Anubhav Gupta
 // appears in Ranjit Jhala, Ken McMillan: "A Practical and Complete Approach
 // to Predicate Refinement", TACAS 2006
@@ -17,7 +20,7 @@ int main() {
     }
 
     if (i == j) {
-        __VERIFIER_assert(y == 0);
+        __JVERIFIER_assert(y == 0);
     }
     return 0;
 }

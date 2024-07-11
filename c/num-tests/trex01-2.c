@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 extern void abort(void);
 #include <assert.h>
 void reach_error() { assert(0); }
@@ -23,7 +26,7 @@ void f(int d) {
   if (!(k <= 1073741823))
     return;
   while (z < k) { z = 2 * z; }
-  __VERIFIER_assert(z>=1);
+  __JVERIFIER_assert(z>=1);
   L2:
   if (!(x <= LARGE_INT && x >= -LARGE_INT)) return;
   if (!(y <= LARGE_INT && y >= -LARGE_INT)) return;

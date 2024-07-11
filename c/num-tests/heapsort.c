@@ -1,4 +1,7 @@
 #include "assert.h"
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 
 int main( int argc, char *argv[]){
   int n,l,r,i,j;
@@ -19,32 +22,32 @@ int main( int argc, char *argv[]){
     j = 2*l;
     while(j <= r) {
       if( j < r) {
-	__VERIFIER_assert(1 <= j);
-	__VERIFIER_assert(j <= n);
-	__VERIFIER_assert(1 <= j+1);
-	__VERIFIER_assert(j+1 <= n);
+	__JVERIFIER_assert(1 <= j);
+	__JVERIFIER_assert(j <= n);
+	__JVERIFIER_assert(1 <= j+1);
+	__JVERIFIER_assert(j+1 <= n);
 	if( __VERIFIER_nondet_int() )
 	  j = j + 1;
       }
-      __VERIFIER_assert(1 <= j);
-      __VERIFIER_assert(j <= n);
+      __JVERIFIER_assert(1 <= j);
+      __JVERIFIER_assert(j <= n);
       if( __VERIFIER_nondet_int() ) { 
       	break;
       }
-      __VERIFIER_assert(1 <= i);
-      __VERIFIER_assert(i <= n);
-      __VERIFIER_assert(1 <= j);
-      __VERIFIER_assert(j <= n);
+      __JVERIFIER_assert(1 <= i);
+      __JVERIFIER_assert(i <= n);
+      __JVERIFIER_assert(1 <= j);
+      __JVERIFIER_assert(j <= n);
       i = j;
       j = 2*j;
     }
     if(l > 1) {
-      __VERIFIER_assert(1 <= l);
-      __VERIFIER_assert(l <= n);
+      __JVERIFIER_assert(1 <= l);
+      __JVERIFIER_assert(l <= n);
       l--;
     } else {
-      __VERIFIER_assert(1 <= r);
-      __VERIFIER_assert(r <= n);
+      __JVERIFIER_assert(1 <= r);
+      __JVERIFIER_assert(r <= n);
       r--;
     }
   }

@@ -1,3 +1,6 @@
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 int SIZE = 50000001;
 int __VERIFIER_nondet_int();
 extern void abort(void);
@@ -29,6 +32,6 @@ int main() {
    j-=4;
    k -=4; 
   }
-  __VERIFIER_assert( (k%2) == 0 );
+  __JVERIFIER_assert( (k%2) == 0 );
   return 0;
 }

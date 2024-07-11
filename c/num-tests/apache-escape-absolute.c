@@ -1,4 +1,7 @@
 #include "assert.h"
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 
 int main()
 {
@@ -21,23 +24,23 @@ int main()
 
     cp = scheme;
 
-    __VERIFIER_assert(cp-1 < urilen);
-    __VERIFIER_assert(0 <= cp-1);
+    __JVERIFIER_assert(cp-1 < urilen);
+    __JVERIFIER_assert(0 <= cp-1);
 
     if (__VERIFIER_nondet_int()) {
-        __VERIFIER_assert(cp < urilen);
-        __VERIFIER_assert(0 <= cp);
+        __JVERIFIER_assert(cp < urilen);
+        __JVERIFIER_assert(0 <= cp);
         while ( cp != urilen-1) {
             if(__VERIFIER_nondet_int()) break;
-            __VERIFIER_assert(cp < urilen);
-            __VERIFIER_assert(0 <= cp);
+            __JVERIFIER_assert(cp < urilen);
+            __JVERIFIER_assert(0 <= cp);
             ++cp;
         }
-        __VERIFIER_assert(cp < urilen);
-        __VERIFIER_assert( 0 <= cp );
+        __JVERIFIER_assert(cp < urilen);
+        __JVERIFIER_assert( 0 <= cp );
         if (cp == urilen-1) goto END;
-        __VERIFIER_assert(cp+1 < urilen);
-        __VERIFIER_assert( 0 <= cp+1 );
+        __JVERIFIER_assert(cp+1 < urilen);
+        __JVERIFIER_assert( 0 <= cp+1 );
         if (cp+1 == urilen-1) goto END;
         ++cp;
 
@@ -45,18 +48,18 @@ int main()
 
         if (__VERIFIER_nondet_int()) {
             c = 0;
-            __VERIFIER_assert(cp < urilen);
-            __VERIFIER_assert(0<=cp);
+            __JVERIFIER_assert(cp < urilen);
+            __JVERIFIER_assert(0<=cp);
             while ( cp != urilen-1
                     && c < tokenlen - 1) {
-                __VERIFIER_assert(cp < urilen);
-                __VERIFIER_assert(0<=cp);
+                __JVERIFIER_assert(cp < urilen);
+                __JVERIFIER_assert(0<=cp);
                 if (__VERIFIER_nondet_int()) {
                     ++c;
-                    __VERIFIER_assert(c < tokenlen);
-                    __VERIFIER_assert(0<=c);
-                    __VERIFIER_assert(cp < urilen);
-                    __VERIFIER_assert(0<=cp);
+                    __JVERIFIER_assert(c < tokenlen);
+                    __JVERIFIER_assert(0<=c);
+                    __JVERIFIER_assert(cp < urilen);
+                    __JVERIFIER_assert(0<=cp);
                 }
                 ++cp;
             }

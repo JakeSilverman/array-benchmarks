@@ -1,4 +1,7 @@
 #include "assert.h"
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+void __JVERIFIER_assert(int cond) {if (!cond) { ERROR: {__VERIFIER_error(); }}}
+
 
 int main ()
 {
@@ -28,8 +31,8 @@ int main ()
       glob2_p_off <= glob2_pathlim_off;
       glob2_p_off++) {
     /* OK */
-    __VERIFIER_assert (0 <= glob2_p_off );
-    __VERIFIER_assert (glob2_p_off < MAXPATHLEN + 1);
+    __JVERIFIER_assert (0 <= glob2_p_off );
+    __JVERIFIER_assert (glob2_p_off < MAXPATHLEN + 1);
   }
 
  END:  return 0;
