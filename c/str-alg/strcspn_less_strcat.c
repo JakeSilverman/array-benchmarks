@@ -8,14 +8,14 @@ extern char __VERIFIER_nondet_char();
 int main() {
   int size = __VERIFIER_nondet_int();
   char str1[size];
-  init(size, src);
+  init(size, str1);
   char chars1[size*2];
   char chars2[size];
   init(size, chars1);
-  init(size, char2); 
-  size_t span1 = strchr(str1, chars1);
-  chars1 = strcat(chars1, chars2);
-  size_t span2 = strchr(str1, chars1);
+  init(size, chars2);
+  size_t span1 = strcspn(str1, chars1);
+  strcat(chars1, chars2);
+  size_t span2 = strcspn(str1, chars1);
   __JVERIFIER_assert(span1 >= span2) ;
   return 0;
 }

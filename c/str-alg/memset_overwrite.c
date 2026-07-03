@@ -14,7 +14,7 @@ int main() {
   char str[size];
   memset2(str, ch, n);
   memset2(str, ch2, n2);
-  for(size_t i = n2; i < n1; i ++)
+  for(size_t i = n2; i < n; i ++)
   {
       __JVERIFIER_assert(str[i] == ch) ;
       i++;

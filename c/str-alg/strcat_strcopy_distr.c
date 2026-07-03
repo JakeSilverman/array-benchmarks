@@ -18,9 +18,8 @@ int main() {
     strcpy(b2, b1);
 
     strcat(a1, b1);
-    strcpy(a1', a1);
     strcat(a2, b2);
 
-    __JVERIFIER_assert(strcmp(a1', a2) == 0);
+    __JVERIFIER_assert(strcmp(a1, a2) == 0);
     return 0;
 }
