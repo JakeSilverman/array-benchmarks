@@ -1,0 +1,8 @@
+c/svcomp26/nontermination-smoke/array-industry-pattern/array_assert_loop_dep.i
+c/svcomp26/nontermination-smoke/array-industry-pattern/array_ptr_single_elem_init-2.i
+c/svcomp26/nontermination-smoke/array-industry-pattern/array_single_elem_init.i
+c/svcomp26/nontermination-smoke/reducercommutativity/rangesum.i
+c/svcomp26/nontermination-smoke/reducercommutativity/rangesum05.i
+c/svcomp26/nontermination-smoke/reducercommutativity/rangesum10.i
+c/svcomp26/nontermination-smoke/termination-memory-alloca/Urban-2013WST-Fig1-alloca.i
+c/svcomp26/nontermination-smoke/termination-memory-alloca/Velroyen-alloca.i
