@@ -14,8 +14,8 @@ int main() {
     init(size, a1);
     init(size, b1);
     char* index = strchr(a1, ch); 
-    strcat(a1, b2);
-    if(index != '\0') {
+    strcat(a1, b1);
+    if(index != NULL) {
         __JVERIFIER_assert(strchr(a1, ch) == index);
     }
     return 0;

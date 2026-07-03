@@ -395,6 +395,9 @@ int main() {
   int size_a = __VERIFIER_nondet_int();
   int size_b = __VERIFIER_nondet_int();
   int n = __VERIFIER_nondet_int();
+  if (size_a <= 0 || size_b <= 0 || n < 0 || n > size_a || n > size_b) {
+      return 0;
+  }
   char a[size_a];
   init(size_a, a);
   char b[size_b];
@@ -402,7 +405,7 @@ int main() {
   int v = memcmp2(a, b, n);
   if (v != 0 && n >= 0){
       int i = 0;
-      while (a[i] == b[i])
+      while (i < n && a[i] == b[i])
       {
           i++;
       }

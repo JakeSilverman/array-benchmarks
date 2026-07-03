@@ -4,7 +4,7 @@ void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
 } }
 extern int __VERIFIER_nondet_int();
 #include "string.h"
-memcmp(a, a, n) = 0
+// memcmp(a, a, n) = 0
 
 int main() {
     int size = __VERIFIER_nondet_int();

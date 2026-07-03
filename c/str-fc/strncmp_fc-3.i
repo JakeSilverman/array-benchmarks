@@ -395,6 +395,9 @@ int main() {
   int size_a = __VERIFIER_nondet_int();
   int size_b = __VERIFIER_nondet_int();
   int n = __VERIFIER_nondet_int();
+  if (size_a <= 0 || size_b <= 0 || n < 0 || n > size_a || n > size_b) {
+      return 0;
+  }
   char a[size_a];
   init(size_a, a);
   char b[size_b];
@@ -402,11 +405,11 @@ int main() {
   int v = strncmp(a, b, n);
   if (v < 0 && n >= 0){
       int i = 0;
-      while (a[i] != '\0' && a[i] == b[i] && i < n)
+      while (i < n && a[i] != '\0' && b[i] != '\0' && a[i] == b[i])
       {
           i++;
       }
-      __JVERIFIER_assert(a[i] < b[i]);
+      __JVERIFIER_assert((unsigned char)a[i] < (unsigned char)b[i]);
   }
   return 0;
 }

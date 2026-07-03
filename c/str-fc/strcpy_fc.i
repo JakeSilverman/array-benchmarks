@@ -393,9 +393,12 @@ void init(int size, char *dest) {
 }
 int main() {
   int size = __VERIFIER_nondet_int();
+  if (size <= 0) {
+      return 0;
+  }
   char str[size];
-  init(size, str);
   char str2[size];
+  init(size, str2);
   strcpy(str, str2);
   int i = 0;
   while (str[i] != '\0')

@@ -8,8 +8,8 @@ extern char __VERIFIER_nondet_char();
 int main() {
   int size = __VERIFIER_nondet_int();
   char str[size];
-  init(size, src);
-  size_t span = strchr(str, str);
+  init(size, str);
+  size_t span = strcspn(str, str);
   __JVERIFIER_assert(span == 0) ;
   return 0;
 }
