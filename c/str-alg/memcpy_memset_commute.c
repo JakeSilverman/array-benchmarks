@@ -2,6 +2,7 @@ extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
 __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
+extern char __VERIFIER_nondet_char();
 #include "string.h"
 
 int main() {
@@ -14,7 +15,7 @@ int main() {
   char dest1[size];
   char src2[size];
   char dest2[size];
-  int ch = __VERIFIER_nondet_int();
+  char ch = __VERIFIER_nondet_char();
   init(size, src1);
   init(size, src2);
   memcpy2(dest1, src1, n);
@@ -24,7 +25,6 @@ int main() {
   for(size_t i = 0; i < n; i ++)
   {
      __JVERIFIER_assert(dest2[i] == dest1[i]) ;
-     i++;
   }
   return 0;
 }
