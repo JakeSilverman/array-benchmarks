@@ -9,11 +9,17 @@ extern char __VERIFIER_nondet_char();
 int main() {
     int size_a = __VERIFIER_nondet_int();
     int size_b = __VERIFIER_nondet_int();
+    if (size_a <= 0 || size_b <= 0) {
+        return 0;
+    }
     char a[size_a];
     init(size_a, a);
     char b[size_b];
     init(size_b, b);
     int n = strlen(a);
+    if (n + 1 > size_b) {
+        return 0;
+    }
     int v1 = strcmp(a, b);
     int v2 = memcmp2(a, b, n + 1);
     __JVERIFIER_assert(v1 == v2);

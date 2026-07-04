@@ -9,6 +9,9 @@ int main() {
   int size_a = __VERIFIER_nondet_int();
   int c = __VERIFIER_nondet_char();
   int n = __VERIFIER_nondet_int();
+  if (size_a <= 0 || n < 0 || n >= size_a) {
+      return 0;
+  }
   char str[size_a];
   init(size_a, str);
   char old = str[n];

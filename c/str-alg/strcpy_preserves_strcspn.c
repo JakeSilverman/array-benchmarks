@@ -7,14 +7,17 @@ extern char __VERIFIER_nondet_char();
 
 int main() {
   int size = __VERIFIER_nondet_int();
+  if (size <= 0) {
+      return 0;
+  }
   char src[size];
   init(size, src);
   char dest[size];
   strcpy(dest, src);
   char chars[size];
   init(size, chars);
-  size_t span1 = strchr(dest, chars);
-  size_t span2 = strchr(src, chars);
+  size_t span1 = strcspn(dest, chars);
+  size_t span2 = strcspn(src, chars);
   __JVERIFIER_assert(span1 == span2) ;
   return 0;
 }

@@ -10,6 +10,9 @@ int main() {
   int size = __VERIFIER_nondet_int();
   size_t n1 = __VERIFIER_nondet_int();
   size_t n2 = __VERIFIER_nondet_int();
+  if (size <= 0 || n1 > size || n2 > size) {
+      return 0;
+  }
   char str1[size];
   char str2[size];
   init(size, str1);

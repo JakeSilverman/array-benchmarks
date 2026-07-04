@@ -10,6 +10,9 @@ int main() {
     int size_a = __VERIFIER_nondet_int();
     int size_b = __VERIFIER_nondet_int();
     int size_c = __VERIFIER_nondet_int();
+    if (size_a <= 0 || size_b <= 0 || size_c <= 0) {
+        return 0;
+    }
     char a[size_a];
     init(size_a,a);
     char b[size_b];
@@ -21,9 +24,8 @@ int main() {
     int a_b = strcmp(a, b);
     int a_c = strcmp(a, c);
     int b_c = strcmp(b, c);
-    //TODO: This assertion is wrong... correct it
-    if (a_b == b_c){
-        __JVERIFIER_assert(a_b == a_c);
+    if (a_b == 0 && b_c == 0){
+        __JVERIFIER_assert(a_c == 0);
     }
     return 0;
 }

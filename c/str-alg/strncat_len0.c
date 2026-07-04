@@ -8,6 +8,9 @@ extern int __VERIFIER_nondet_int();
 
 int main() {
     int size = __VERIFIER_nondet_int();
+    if (size <= 0) {
+        return 0;
+    }
     char hd1[size];
     char hd2[size];
     char tl[size]; 

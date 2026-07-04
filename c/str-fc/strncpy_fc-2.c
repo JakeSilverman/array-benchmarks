@@ -8,14 +8,17 @@ int main() {
   int size_a = __VERIFIER_nondet_int();
   int size_b = __VERIFIER_nondet_int();
   int n = __VERIFIER_nondet_int();
+  if (size_a <= 0 || size_b <= 0 || n < 0 || n > size_b) {
+      return 0;
+  }
 
   char str[size_a];
   init(size_a, str);
   char dst[size_b];
   init(size_b, dst);
   strncpy(dst, str, n);
-  int i = 0;
-  while (i > strlen(str) && i < n)
+  int i = strlen(str);
+  while (i < n)
   {
      __JVERIFIER_assert('\0' == dst[i]) ;
      i++;

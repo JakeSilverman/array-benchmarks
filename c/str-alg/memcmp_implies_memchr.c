@@ -9,7 +9,9 @@ extern char __VERIFIER_nondet_char();
 int main() {
   int size = __VERIFIER_nondet_int();
   size_t n1 = __VERIFIER_nondet_int();
-  size_t n2 = __VERIFIER_nondet_int();
+  if (size <= 0 || n1 > size) {
+      return 0;
+  }
   char str1[size];
   char str2[size];
   init(size, str1);
@@ -18,7 +20,9 @@ int main() {
       char lookup = __VERIFIER_nondet_char();
       char* index = memchr2(str1, lookup, n1);
       char* index2 = memchr2(str2, lookup, n1);
-      __JVERIFIER_assert(index == index2);
+      __JVERIFIER_assert((index == '\0' && index2 == '\0') ||
+                         (index != '\0' && index2 != '\0' &&
+                          index - str1 == index2 - str2));
   }
     return 0;
 }

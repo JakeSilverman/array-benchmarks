@@ -8,8 +8,11 @@ extern int __VERIFIER_nondet_int();
 
 int main() {
     int size = __VERIFIER_nondet_int();
+    if (size <= 0) {
+        return 0;
+    }
     char a1[size];
-    char b1[size]; 
+    char b1[2*size]; 
     init(size, a1);
     init(size, b1);
     char a2[size];

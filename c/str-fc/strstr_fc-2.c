@@ -8,6 +8,9 @@ extern int __VERIFIER_nondet_int();
 int main() {
   int size_a = __VERIFIER_nondet_int();
   int size_b = __VERIFIER_nondet_int();
+  if (size_a <= 0 || size_b <= 0) {
+      return 0;
+  }
 
   char haystack[size_a];
   init(size_a, haystack);
@@ -21,11 +24,12 @@ int main() {
       {
           bool b = true;
           int j = 0;
-          while (needle[j] != '\0')
+          while (needle[j] != '\0' && haystack[i+j] != '\0')
           {
-              b = b && haystack[i] == needle[j];
+              b = b && haystack[i+j] == needle[j];
               j++;
           }
+          b = b && needle[j] == '\0';
           __JVERIFIER_assert(!b) ;
           i++;
       }

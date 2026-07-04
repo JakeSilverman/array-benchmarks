@@ -7,11 +7,14 @@ extern char __VERIFIER_nondet_char();
 
 int main() {
     int size = __VERIFIER_nondet_int();
+    size_t n = __VERIFIER_nondet_int();
+    if (size <= 0 || n > size) {
+        return 0;
+    }
     char a[size];
     init(size, a);
     char dst1[size];
     char dst2[size];
-    size_t n = __VERIFIER_nondet_int();
     memcpy2(dst1, a, n);
     strncpy(dst2, a, n);
     if(n <= strlen(a)) {

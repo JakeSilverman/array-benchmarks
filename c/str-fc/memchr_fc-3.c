@@ -8,12 +8,15 @@ extern char __VERIFIER_nondet_char();
 int main() {
   int size = __VERIFIER_nondet_int();
   int n = __VERIFIER_nondet_int();
+  if (size <= 0 || n < 0 || n > size) {
+      return 0;
+  }
   char str[size];
   init(size, str);
   char lookup = __VERIFIER_nondet_char();
   char* index = memchr2(str, lookup, n);
   int i = 0;
-  if (index != NULL && n >= 0)
+  if (index != NULL)
   {
       while (str + i < index)
       {

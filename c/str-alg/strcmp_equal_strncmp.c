@@ -8,6 +8,9 @@ extern char __VERIFIER_nondet_char();
 int main() {
     int size_a = __VERIFIER_nondet_int();
     int size_b = __VERIFIER_nondet_int();
+    if (size_a <= 0 || size_b <= 0) {
+        return 0;
+    }
     char a[size_a];
     init(size_a, a);
     char b[size_b];

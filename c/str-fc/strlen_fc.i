@@ -394,6 +394,9 @@ void init(int size, char *dest) {
 }
 int main() {
   int size = __VERIFIER_nondet_int();
+  if (size <= 0) {
+      return 0;
+  }
   char str[size];
   init(size, str);
   int len = strlen(str);

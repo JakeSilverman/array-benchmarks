@@ -395,12 +395,15 @@ void init(int size, char *dest) {
 int main() {
   int size = __VERIFIER_nondet_int();
   int n = __VERIFIER_nondet_int();
+  if (size <= 0 || n < 0 || n > size) {
+      return 0;
+  }
   char str[size];
   init(size, str);
   char lookup = __VERIFIER_nondet_char();
   char* index = memchr2(str, lookup, n);
   int i = 0;
-  if (index != ((void *)0) && n >= 0)
+  if (index != ((void *)0))
   {
       while (str + i < index)
       {

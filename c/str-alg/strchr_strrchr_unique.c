@@ -7,11 +7,14 @@ extern char __VERIFIER_nondet_char();
 
 int main() {
     int size_a = __VERIFIER_nondet_int();
+    if (size_a <= 0) {
+        return 0;
+    }
     char a[size_a];
     init(size_a, a);
     char lookup = __VERIFIER_nondet_char();
     char* f = strchr(a, lookup);
-    char* l = strchr(a, lookup);
+    char* l = strrchr(a, lookup);
     if(f == l && f != '\0') {
         for(int i = 0; i < strlen(a); i++)
         {

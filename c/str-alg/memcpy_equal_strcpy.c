@@ -7,6 +7,9 @@ extern char __VERIFIER_nondet_char();
 
 int main() {
     int size = __VERIFIER_nondet_int();
+    if (size <= 0) {
+        return 0;
+    }
     char a[size];
     init(size, a);
     char dst1[size];

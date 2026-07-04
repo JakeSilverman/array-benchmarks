@@ -10,6 +10,11 @@ int main() {
     int size_a = __VERIFIER_nondet_int();
     int size_b = __VERIFIER_nondet_int();
     int size_c = __VERIFIER_nondet_int();
+    size_t n =  __VERIFIER_nondet_int();
+    if (size_a <= 0 || size_b <= 0 || size_c <= 0 ||
+        n > size_a || n > size_b || n > size_c) {
+        return 0;
+    }
     char a[size_a];
     init(size_a,a);
     char b[size_b];
@@ -17,14 +22,11 @@ int main() {
     char c[size_c];
     init(size_c, c);
 
-
-    size_t n =  __VERIFIER_nondet_int();
     int a_b = memcmp2(a, b, n);
     int a_c = memcmp2(a, c, n);
     int b_c = memcmp2(b, c, n);
-    //TODO: This assertion is wrong... correct it
-    if (a_b == b_c){
-        __JVERIFIER_assert(a_b == a_c);
+    if (a_b == 0 && b_c == 0){
+        __JVERIFIER_assert(a_c == 0);
     }
     return 0;
 }

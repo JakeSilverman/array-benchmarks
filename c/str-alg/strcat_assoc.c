@@ -8,15 +8,18 @@ extern int __VERIFIER_nondet_int();
 
 int main() {
     int size = __VERIFIER_nondet_int();
-    char a1[size];
-    char b1[size]; 
-    char c1[size]; 
+    if (size <= 0) {
+        return 0;
+    }
+    char a1[3*size];
+    char b1[3*size]; 
+    char c1[3*size]; 
     init(size, a1);
     init(size, b1);
     init(size, c1);
-    char a2[size];
-    char b2[size]; 
-    char c2[size]; 
+    char a2[3*size];
+    char b2[3*size]; 
+    char c2[3*size]; 
     strcpy(a2, a1);
     strcpy(b2, b1);
     strcpy(c2, c1);

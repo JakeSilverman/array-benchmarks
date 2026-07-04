@@ -8,6 +8,9 @@ int main() {
   int size = __VERIFIER_nondet_int();
   int ch = __VERIFIER_nondet_int();
   size_t n = __VERIFIER_nondet_int();
+  if (size <= 0 || n > size) {
+      return 0;
+  }
   char str1[size];
   char str2[size];
   memset2(str1, ch, n);

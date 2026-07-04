@@ -8,15 +8,18 @@ extern char __VERIFIER_nondet_char();
 int main() {
     int size_a = __VERIFIER_nondet_int();
     int size_b = __VERIFIER_nondet_int();
+    int n1 = __VERIFIER_nondet_int();
+    int n2 = __VERIFIER_nondet_int();
+    if (size_a <= 0 || size_b <= 0 || n1 < 0 || n2 < 0) {
+        return 0;
+    }
     char a[size_a];
     init(size_a, a);
     char b[size_b];
     init(size_b, b);
-    int n1 = __VERIFIER_nondet_int();
-    int n2 = __VERIFIER_nondet_int();
     int v1 = strncmp(a, b, n1);
     int v2 = strncmp(a, b, n2);
-    if(v1 != 0 && v1 <= v2) {
+    if(v1 != 0 && n1 <= n2) {
         __JVERIFIER_assert(v1 == v2);
     }
     return 0;

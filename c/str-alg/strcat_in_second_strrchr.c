@@ -9,14 +9,18 @@ extern int __VERIFIER_nondet_int();
 int main() {
     int size = __VERIFIER_nondet_int();
     int ch = __VERIFIER_nondet_int();
-    char a[size];
+    if (size <= 0 || ch == '\0') {
+        return 0;
+    }
+    char a[2*size];
     char b[size]; 
     init(size, a);
     init(size, b);
-    char* index = strrchr(a, ch); 
+    size_t len = strlen(a);
+    char* index = strrchr(b, ch); 
     strcat(a, b);
     if(index != NULL) {
-        __JVERIFIER_assert(strchr(a, ch) - a - strlen(a)  == index - b);
+        __JVERIFIER_assert(strrchr(a, ch) - a == len + (index - b));
     }
     return 0;
 }

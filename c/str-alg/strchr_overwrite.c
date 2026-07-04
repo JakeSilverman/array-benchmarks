@@ -7,9 +7,15 @@ extern char __VERIFIER_nondet_char();
 
 int main() {
     int size_a = __VERIFIER_nondet_int();
+    if (size_a <= 0) {
+        return 0;
+    }
     char a[size_a];
     init(size_a, a);
     char lookup = __VERIFIER_nondet_char();
+    if (lookup == '\0') {
+        return 0;
+    }
     char* f = strchr(a, lookup);
     if(f != '\0') {
         a[f - a] = lookup + 1;

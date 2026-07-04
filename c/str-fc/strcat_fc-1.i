@@ -394,7 +394,10 @@ void init(int size, char *dest) {
 int main() {
   int size_a = __VERIFIER_nondet_int();
   int size_b = __VERIFIER_nondet_int();
-  char str[size_a];
+  if (size_a <= 0 || size_b <= 0) {
+      return 0;
+  }
+  char str[size_a + size_b];
   init(size_a, str);
   char str_og[size_a];
   strcpy(str_og, str);
