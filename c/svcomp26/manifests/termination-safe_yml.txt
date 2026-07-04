@@ -74,11 +74,9 @@ c/svcomp26/termination-safe/termination-memory-alloca/HarrisLalNoriRajamani-2010
 c/svcomp26/termination-safe/termination-memory-alloca/KroeningSharyginaTsitovichWintersteiger-2010CAV-Fig1-alloca.yml
 c/svcomp26/termination-safe/termination-memory-alloca/Masse-alloca-3.yml
 c/svcomp26/termination-safe/termination-memory-alloca/TelAviv-Amir-Minimum-alloca-2.yml
-c/svcomp26/termination-safe/termination-memory-alloca/Urban-2013WST-Fig1-alloca.yml
 c/svcomp26/termination-safe/termination-memory-alloca/Urban-2013WST-Fig2-alloca-2.yml
 c/svcomp26/termination-safe/termination-memory-alloca/Urban-2013WST-Fig2-modified1000-alloca.yml
 c/svcomp26/termination-safe/termination-memory-alloca/Urban-alloca-2.yml
-c/svcomp26/termination-safe/termination-memory-alloca/Velroyen-alloca.yml
 c/svcomp26/termination-safe/termination-memory-alloca/a.01-alloca.yml
 c/svcomp26/termination-safe/termination-memory-alloca/a.04-alloca.yml
 c/svcomp26/termination-safe/termination-memory-alloca/a.05-alloca.yml
