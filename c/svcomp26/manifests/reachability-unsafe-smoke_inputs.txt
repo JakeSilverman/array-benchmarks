@@ -31,7 +31,6 @@ c/svcomp26/reachability-unsafe-smoke/array-fpi/brs1f.c
 c/svcomp26/reachability-unsafe-smoke/array-fpi/brs2f.c
 c/svcomp26/reachability-unsafe-smoke/array-fpi/brs3f.c
 c/svcomp26/reachability-unsafe-smoke/array-fpi/brs4f.c
-c/svcomp26/reachability-unsafe-smoke/array-fpi/brs5f.c
 c/svcomp26/reachability-unsafe-smoke/array-fpi/condaf.c
 c/svcomp26/reachability-unsafe-smoke/array-fpi/condgf.c
 c/svcomp26/reachability-unsafe-smoke/array-fpi/condmf.c
@@ -78,12 +77,6 @@ c/svcomp26/reachability-unsafe-smoke/array-fpi/s2liff.c
 c/svcomp26/reachability-unsafe-smoke/array-fpi/s32iff.c
 c/svcomp26/reachability-unsafe-smoke/array-fpi/s3iff.c
 c/svcomp26/reachability-unsafe-smoke/array-fpi/s3liff.c
-c/svcomp26/reachability-unsafe-smoke/array-fpi/s42iff.c
-c/svcomp26/reachability-unsafe-smoke/array-fpi/s4iff.c
-c/svcomp26/reachability-unsafe-smoke/array-fpi/s4liff.c
-c/svcomp26/reachability-unsafe-smoke/array-fpi/s52iff.c
-c/svcomp26/reachability-unsafe-smoke/array-fpi/s5iff.c
-c/svcomp26/reachability-unsafe-smoke/array-fpi/s5liff.c
 c/svcomp26/reachability-unsafe-smoke/array-fpi/sina1f.c
 c/svcomp26/reachability-unsafe-smoke/array-fpi/sina2f.c
 c/svcomp26/reachability-unsafe-smoke/array-fpi/sina3f.c

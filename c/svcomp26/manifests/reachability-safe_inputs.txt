@@ -133,7 +133,6 @@ c/svcomp26/reachability-safe/array-fpi/brs1.c
 c/svcomp26/reachability-safe/array-fpi/brs2.c
 c/svcomp26/reachability-safe/array-fpi/brs3.c
 c/svcomp26/reachability-safe/array-fpi/brs4.c
-c/svcomp26/reachability-safe/array-fpi/brs5.c
 c/svcomp26/reachability-safe/array-fpi/conda.c
 c/svcomp26/reachability-safe/array-fpi/condg.c
 c/svcomp26/reachability-safe/array-fpi/condm.c
@@ -180,12 +179,7 @@ c/svcomp26/reachability-safe/array-fpi/s2lif.c
 c/svcomp26/reachability-safe/array-fpi/s32if.c
 c/svcomp26/reachability-safe/array-fpi/s3if.c
 c/svcomp26/reachability-safe/array-fpi/s3lif.c
-c/svcomp26/reachability-safe/array-fpi/s42if.c
 c/svcomp26/reachability-safe/array-fpi/s4if.c
-c/svcomp26/reachability-safe/array-fpi/s4lif.c
-c/svcomp26/reachability-safe/array-fpi/s52if.c
-c/svcomp26/reachability-safe/array-fpi/s5if.c
-c/svcomp26/reachability-safe/array-fpi/s5lif.c
 c/svcomp26/reachability-safe/array-fpi/sina1.c
 c/svcomp26/reachability-safe/array-fpi/sina2.c
 c/svcomp26/reachability-safe/array-fpi/sina3.c

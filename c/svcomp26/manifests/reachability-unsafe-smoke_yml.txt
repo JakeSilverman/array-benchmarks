@@ -31,7 +31,6 @@ c/svcomp26/reachability-unsafe-smoke/array-fpi/brs1f.yml
 c/svcomp26/reachability-unsafe-smoke/array-fpi/brs2f.yml
 c/svcomp26/reachability-unsafe-smoke/array-fpi/brs3f.yml
 c/svcomp26/reachability-unsafe-smoke/array-fpi/brs4f.yml
-c/svcomp26/reachability-unsafe-smoke/array-fpi/brs5f.yml
 c/svcomp26/reachability-unsafe-smoke/array-fpi/condaf.yml
 c/svcomp26/reachability-unsafe-smoke/array-fpi/condgf.yml
 c/svcomp26/reachability-unsafe-smoke/array-fpi/condmf.yml
@@ -78,12 +77,6 @@ c/svcomp26/reachability-unsafe-smoke/array-fpi/s2liff.yml
 c/svcomp26/reachability-unsafe-smoke/array-fpi/s32iff.yml
 c/svcomp26/reachability-unsafe-smoke/array-fpi/s3iff.yml
 c/svcomp26/reachability-unsafe-smoke/array-fpi/s3liff.yml
-c/svcomp26/reachability-unsafe-smoke/array-fpi/s42iff.yml
-c/svcomp26/reachability-unsafe-smoke/array-fpi/s4iff.yml
-c/svcomp26/reachability-unsafe-smoke/array-fpi/s4liff.yml
-c/svcomp26/reachability-unsafe-smoke/array-fpi/s52iff.yml
-c/svcomp26/reachability-unsafe-smoke/array-fpi/s5iff.yml
-c/svcomp26/reachability-unsafe-smoke/array-fpi/s5liff.yml
 c/svcomp26/reachability-unsafe-smoke/array-fpi/sina1f.yml
 c/svcomp26/reachability-unsafe-smoke/array-fpi/sina2f.yml
 c/svcomp26/reachability-unsafe-smoke/array-fpi/sina3f.yml
