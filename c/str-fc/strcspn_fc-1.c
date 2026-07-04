@@ -26,7 +26,6 @@ int main() {
           __JVERIFIER_assert(str[i] != lst[j]) ;
           j++;
       }
-      i++;
   }
   return 0;
 }

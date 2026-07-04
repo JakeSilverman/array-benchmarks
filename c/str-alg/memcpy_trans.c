@@ -21,7 +21,6 @@ int main() {
       for(size_t i = 0; i < n2; i ++)
       {
           __JVERIFIER_assert(dest2[i] == src[i]) ;
-          i++;
       }
   }
   return 0;

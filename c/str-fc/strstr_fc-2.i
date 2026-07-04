@@ -415,7 +415,6 @@ int main() {
           }
           b = b && needle[j] == '\0';
           __JVERIFIER_assert(!b) ;
-          i++;
       }
   }
   return 0;

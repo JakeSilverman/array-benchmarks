@@ -413,7 +413,6 @@ int main() {
           j++;
       }
       __JVERIFIER_assert(b) ;
-      i++;
   }
   return 0;
 }

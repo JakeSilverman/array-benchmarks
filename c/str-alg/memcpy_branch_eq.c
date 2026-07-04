@@ -19,7 +19,6 @@ int main() {
   for(size_t i = 0; i < n; i ++)
   {
      __JVERIFIER_assert(dest2[i] == dest1[i]) ;
-     i++;
   }
   return 0;
 }
