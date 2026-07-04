@@ -18,9 +18,9 @@ int main() {
     init(size, a1);
     init(size, b1);
     char* index = strchr(a1, ch); 
-    if(strrchr(a1, ch) == '\0' && strrchr(b1, ch) == '\0') {
+    if(strrchr(a1, ch) == NULL && strrchr(b1, ch) == NULL) {
         strcat(a1, b1);
-        __JVERIFIER_assert(strrchr(a1, ch) == '\0');
+        __JVERIFIER_assert(strrchr(a1, ch) == NULL);
     }
     return 0;
 }
