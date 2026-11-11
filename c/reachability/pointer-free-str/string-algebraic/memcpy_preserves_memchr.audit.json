@@ -1,0 +1,27 @@
+{
+  "inlined_calls": [
+    "init",
+    "memcpy2",
+    "memchr2",
+    "memchr2"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "src",
+      "name": "ix_src_6",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "dst",
+      "name": "ix_dst_9",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/memcpy_preserves_memchr.c"
+}

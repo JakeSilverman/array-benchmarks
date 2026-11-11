@@ -1,0 +1,21 @@
+{
+  "inlined_calls": [
+    "memset2",
+    "memset2"
+  ],
+  "pointer_integer_casts": [
+    "memset2: only low 2 address bits observed",
+    "memset2: only low 2 address bits observed"
+  ],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "str",
+      "name": "ix_str_8",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/memset_overwrite.c"
+}

@@ -1,0 +1,50 @@
+{
+  "inlined_calls": [
+    "init",
+    "init",
+    "strstr",
+    "strchr",
+    "__strchrnul",
+    "strlen",
+    "twobyte_strstr",
+    "threebyte_strstr",
+    "fourbyte_strstr",
+    "twoway_strstr",
+    "memcmp2",
+    "memchr2",
+    "strlen"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "haystack",
+      "name": "ix_haystack_4",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "needle",
+      "name": "ix_needle_22",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "byteset",
+      "name": "ix_byteset_153",
+      "element": "unsigned long long",
+      "element_bytes": 8,
+      "byte_backed": true
+    },
+    {
+      "original_name": "shift",
+      "name": "ix_shift_156",
+      "element": "unsigned long long",
+      "element_bytes": 8,
+      "byte_backed": true
+    }
+  ],
+  "source": "String-fc/strstr_fc-1.i"
+}

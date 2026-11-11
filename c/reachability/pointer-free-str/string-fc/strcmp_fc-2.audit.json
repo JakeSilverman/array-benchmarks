@@ -1,0 +1,26 @@
+{
+  "inlined_calls": [
+    "init",
+    "init",
+    "strcmp"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "a",
+      "name": "ix_a_4",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "b",
+      "name": "ix_b_22",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-fc/strcmp_fc-2.i"
+}

@@ -1,0 +1,77 @@
+{
+  "inlined_calls": [
+    "init",
+    "init",
+    "init",
+    "strcpy",
+    "__stpcpy",
+    "strcpy",
+    "__stpcpy",
+    "strcpy",
+    "__stpcpy",
+    "strcat",
+    "strlen",
+    "strcpy",
+    "__stpcpy",
+    "strcat",
+    "strlen",
+    "strcpy",
+    "__stpcpy",
+    "strcat",
+    "strlen",
+    "strcpy",
+    "__stpcpy",
+    "strcat",
+    "strlen",
+    "strcpy",
+    "__stpcpy",
+    "strcmp"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "a1",
+      "name": "ix_a1_2",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "b1",
+      "name": "ix_b1_5",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "c1",
+      "name": "ix_c1_8",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "a2",
+      "name": "ix_a2_56",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "b2",
+      "name": "ix_b2_59",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "c2",
+      "name": "ix_c2_62",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/strcat_assoc.c"
+}

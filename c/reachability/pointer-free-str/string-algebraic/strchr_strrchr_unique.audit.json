@@ -1,0 +1,24 @@
+{
+  "inlined_calls": [
+    "init",
+    "strchr",
+    "__strchrnul",
+    "strlen",
+    "strrchr",
+    "strlen",
+    "__memrchr",
+    "strlen"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "a",
+      "name": "ix_a_2",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/strchr_strrchr_unique.c"
+}

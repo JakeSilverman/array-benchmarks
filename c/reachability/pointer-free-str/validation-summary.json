@@ -1,0 +1,31 @@
+{
+  "suite": "pointer-free-str",
+  "tasks": 107,
+  "string_fc": 45,
+  "string_algebraic": 62,
+  "data_model": "ILP32",
+  "source_bundle": "string-indexed-suite-20261111-nonempty",
+  "source_bundle_zip_sha256": "a3a256007627574c28e662a22fe0ffd006848bacdad5399bc94c22e525874096",
+  "i386_syntax_passed": 107,
+  "explicit_pointer_audit_passed": 107,
+  "native_replay_tasks": 107,
+  "seeds_per_task": 512,
+  "native_mismatches": 0,
+  "strrchr_fc_2": {
+    "nonempty_assumption": true,
+    "assumption_filtered_inputs": 96,
+    "assertion_reaching_inputs": 88
+  },
+  "helper_validation": {
+    "string_pairs": 21129,
+    "memset_cases": 5200,
+    "byte_word_identity_bits": [
+      8,
+      16,
+      32,
+      64
+    ]
+  },
+  "formal_equivalence_proved": false,
+  "full_suite_solver_campaign_performed": false
+}

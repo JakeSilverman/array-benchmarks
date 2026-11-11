@@ -1,0 +1,42 @@
+{
+  "inlined_calls": [
+    "init",
+    "init",
+    "strcpy",
+    "__stpcpy",
+    "strncat",
+    "strlen",
+    "strcat",
+    "strlen",
+    "strcpy",
+    "__stpcpy",
+    "strlen",
+    "strcmp"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "hd1",
+      "name": "ix_hd1_2",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "hd2",
+      "name": "ix_hd2_5",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "tl",
+      "name": "ix_tl_8",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/strncat_len_large.c"
+}

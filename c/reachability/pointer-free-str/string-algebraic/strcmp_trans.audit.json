@@ -1,0 +1,36 @@
+{
+  "inlined_calls": [
+    "init",
+    "init",
+    "init",
+    "strcmp",
+    "strcmp",
+    "strcmp"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "a",
+      "name": "ix_a_6",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "b",
+      "name": "ix_b_24",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "c",
+      "name": "ix_c_42",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/strcmp_trans.c"
+}

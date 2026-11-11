@@ -1,0 +1,28 @@
+{
+  "inlined_calls": [
+    "init",
+    "memmove2",
+    "memcpy2"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [
+    "memmove2 non-overlap guard: distinct caller objects and bounded n; all original branches/bodies retained"
+  ],
+  "objects": [
+    {
+      "original_name": "str",
+      "name": "ix_str_8",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "str2",
+      "name": "ix_str2_26",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-fc/memmove_fc-1.i"
+}

@@ -1,0 +1,27 @@
+{
+  "inlined_calls": [
+    "init",
+    "init",
+    "memcmp2",
+    "memcmp2"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "str1",
+      "name": "ix_str1_6",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "str2",
+      "name": "ix_str2_9",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/memcmp_shorter_neq_implies_longer_neq.c"
+}

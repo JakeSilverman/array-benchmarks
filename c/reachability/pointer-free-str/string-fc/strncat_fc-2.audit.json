@@ -1,0 +1,40 @@
+{
+  "inlined_calls": [
+    "init",
+    "strcpy",
+    "__stpcpy",
+    "init",
+    "strncat",
+    "strlen",
+    "strlen",
+    "strlen",
+    "strlen",
+    "strlen"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "str",
+      "name": "ix_str_6",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "str_og",
+      "name": "ix_str_og_24",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "str2",
+      "name": "ix_str2_44",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-fc/strncat_fc-2.i"
+}

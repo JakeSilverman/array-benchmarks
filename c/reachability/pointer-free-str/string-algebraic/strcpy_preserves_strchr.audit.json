@@ -1,0 +1,32 @@
+{
+  "inlined_calls": [
+    "init",
+    "strcpy",
+    "__stpcpy",
+    "strchr",
+    "__strchrnul",
+    "strlen",
+    "strchr",
+    "__strchrnul",
+    "strlen"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "src",
+      "name": "ix_src_2",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "dest",
+      "name": "ix_dest_20",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/strcpy_preserves_strchr.c"
+}

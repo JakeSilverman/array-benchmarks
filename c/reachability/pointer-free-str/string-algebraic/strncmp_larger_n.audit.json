@@ -1,0 +1,27 @@
+{
+  "inlined_calls": [
+    "init",
+    "init",
+    "strncmp",
+    "strncmp"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "a",
+      "name": "ix_a_8",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "b",
+      "name": "ix_b_26",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/strncmp_larger_n.c"
+}

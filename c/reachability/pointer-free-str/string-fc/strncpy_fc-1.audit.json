@@ -1,0 +1,30 @@
+{
+  "inlined_calls": [
+    "init",
+    "init",
+    "strncpy",
+    "__stpncpy",
+    "memset2"
+  ],
+  "pointer_integer_casts": [
+    "memset2: only low 2 address bits observed"
+  ],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "str",
+      "name": "ix_str_8",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "dst",
+      "name": "ix_dst_26",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-fc/strncpy_fc-1.i"
+}

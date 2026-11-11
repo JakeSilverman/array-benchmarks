@@ -1,0 +1,35 @@
+{
+  "inlined_calls": [
+    "init",
+    "strlen",
+    "memcpy2",
+    "strcpy",
+    "__stpcpy"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "a",
+      "name": "ix_a_2",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "dst1",
+      "name": "ix_dst1_20",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "dst2",
+      "name": "ix_dst2_23",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/memcpy_equal_strcpy.c"
+}

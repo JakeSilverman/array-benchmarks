@@ -1,0 +1,46 @@
+{
+  "inlined_calls": [
+    "init",
+    "init",
+    "memcpy2",
+    "memset2",
+    "memset2",
+    "memcpy2"
+  ],
+  "pointer_integer_casts": [
+    "memset2: only low 2 address bits observed",
+    "memset2: only low 2 address bits observed"
+  ],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "src1",
+      "name": "ix_src1_4",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "dest1",
+      "name": "ix_dest1_7",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "src2",
+      "name": "ix_src2_10",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "dest2",
+      "name": "ix_dest2_13",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/memcpy_memset_commute.c"
+}

@@ -1,0 +1,39 @@
+{
+  "inlined_calls": [
+    "init",
+    "strncpy",
+    "__stpncpy",
+    "memset2",
+    "init",
+    "strncmp",
+    "strncmp"
+  ],
+  "pointer_integer_casts": [
+    "memset2: only low 2 address bits observed"
+  ],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "src",
+      "name": "ix_src_5",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "dest",
+      "name": "ix_dest_23",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "str3",
+      "name": "ix_str3_80",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/strncpy_preserves_strncmp.c"
+}

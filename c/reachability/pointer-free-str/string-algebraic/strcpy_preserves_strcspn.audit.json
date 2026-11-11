@@ -1,0 +1,59 @@
+{
+  "inlined_calls": [
+    "init",
+    "strcpy",
+    "__stpcpy",
+    "init",
+    "strcspn",
+    "__strchrnul",
+    "strlen",
+    "memset2",
+    "strcspn",
+    "__strchrnul",
+    "strlen",
+    "memset2"
+  ],
+  "pointer_integer_casts": [
+    "memset2: only low 2 address bits observed",
+    "memset2: only low 2 address bits observed"
+  ],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "src",
+      "name": "ix_src_2",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "dest",
+      "name": "ix_dest_20",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "chars",
+      "name": "ix_chars_40",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "byteset",
+      "name": "ix_byteset_66",
+      "element": "unsigned int",
+      "element_bytes": 4,
+      "byte_backed": true
+    },
+    {
+      "original_name": "byteset",
+      "name": "ix_byteset_139",
+      "element": "unsigned int",
+      "element_bytes": 4,
+      "byte_backed": true
+    }
+  ],
+  "source": "String-algebraic/strcpy_preserves_strcspn.c"
+}

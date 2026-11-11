@@ -1,0 +1,33 @@
+{
+  "inlined_calls": [
+    "init",
+    "init",
+    "strspn"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "str",
+      "name": "ix_str_4",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "lst",
+      "name": "ix_lst_22",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "byteset",
+      "name": "ix_byteset_48",
+      "element": "unsigned long long",
+      "element_bytes": 8,
+      "byte_backed": true
+    }
+  ],
+  "source": "String-fc/strspn_fc-1.i"
+}

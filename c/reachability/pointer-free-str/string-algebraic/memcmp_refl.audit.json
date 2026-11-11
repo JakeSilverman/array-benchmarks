@@ -1,0 +1,18 @@
+{
+  "inlined_calls": [
+    "init",
+    "memcmp2"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "a",
+      "name": "ix_a_4",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/memcmp_refl.c"
+}

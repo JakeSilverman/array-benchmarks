@@ -1,0 +1,36 @@
+{
+  "inlined_calls": [
+    "init",
+    "init",
+    "init",
+    "memcmp2",
+    "memcmp2",
+    "memcmp2"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "a",
+      "name": "ix_a_10",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "b",
+      "name": "ix_b_28",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "c",
+      "name": "ix_c_46",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/memcmp_trans.c"
+}

@@ -1,0 +1,20 @@
+{
+  "inlined_calls": [
+    "init",
+    "strchr",
+    "__strchrnul",
+    "strlen"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "str",
+      "name": "ix_str_2",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-fc/strchr_fc-1.i"
+}

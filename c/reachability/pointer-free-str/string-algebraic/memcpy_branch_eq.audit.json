@@ -1,0 +1,33 @@
+{
+  "inlined_calls": [
+    "init",
+    "memcpy2",
+    "memcpy2"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "src",
+      "name": "ix_src_4",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "dest1",
+      "name": "ix_dest1_22",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "dest2",
+      "name": "ix_dest2_41",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/memcpy_branch_eq.c"
+}

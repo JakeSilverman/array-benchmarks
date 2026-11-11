@@ -1,0 +1,23 @@
+{
+  "inlined_calls": [
+    "init",
+    "strchr",
+    "__strchrnul",
+    "strlen",
+    "strchr",
+    "__strchrnul",
+    "strlen"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "a",
+      "name": "ix_a_2",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/strchr_overwrite.c"
+}

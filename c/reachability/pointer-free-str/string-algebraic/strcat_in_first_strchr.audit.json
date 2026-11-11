@@ -1,0 +1,35 @@
+{
+  "inlined_calls": [
+    "init",
+    "init",
+    "strchr",
+    "__strchrnul",
+    "strlen",
+    "strcat",
+    "strlen",
+    "strcpy",
+    "__stpcpy",
+    "strchr",
+    "__strchrnul",
+    "strlen"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "a1",
+      "name": "ix_a1_4",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    },
+    {
+      "original_name": "b1",
+      "name": "ix_b1_7",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-algebraic/strcat_in_first_strchr.c"
+}

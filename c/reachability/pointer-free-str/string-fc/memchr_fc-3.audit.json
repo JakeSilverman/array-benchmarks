@@ -1,0 +1,18 @@
+{
+  "inlined_calls": [
+    "init",
+    "memchr2"
+  ],
+  "pointer_integer_casts": [],
+  "specializations": [],
+  "objects": [
+    {
+      "original_name": "str",
+      "name": "ix_str_5",
+      "element": "char",
+      "element_bytes": 1,
+      "byte_backed": false
+    }
+  ],
+  "source": "String-fc/memchr_fc-3.i"
+}
