@@ -20,6 +20,6 @@ int main() {
     strcpy(a2, a1);
     strcpy(b2, b1);
     strcat(b1, a1);
-    __JVERIFIER_assert(strlen(b1) == strlen(a2) + strlen(a1));
+    __JVERIFIER_assert(strlen(b1) == strlen(b2) + strlen(a2));
     return 0;
 }

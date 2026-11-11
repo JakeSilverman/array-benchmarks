@@ -1,0 +1,29 @@
+{
+  "benchmark": "strcat_len",
+  "correction": "The destination length after concatenation equals its saved original length (b2) plus the copied source length (a2); the old assertion counted the source length twice.",
+  "source": "c/reachability/string-algebraic/strcat_len.c",
+  "source_sha256": "fed1da77241796550a8baa1d1acdb89c51b86e30701c147691e19a0da4bcc282",
+  "header": "c/reachability/string-algebraic/string.h",
+  "header_sha256": "2bc4bbd8776648c2ef0342fbf0009689c967285a2d6c448235b2aee94a0b00c4",
+  "data_model": "ILP32",
+  "generated_file": "smt/reachability/string-algebraic/strcat_len.smt2",
+  "generated_sha256": "195bc5e3935ab4e0d6704071a946cbf2d794dae0ff388b8e47b6cbe8e7ead41c",
+  "generation": "Byte-identical native SeaHorn Fixedpoint CHCs from the selected official live-C invocation; no manual CHC changes.",
+  "generator": "SeaHorn v.14.0.0-rc0",
+  "campaign": "ama-correction-only-all565-official-300s-20261111T010625Z",
+  "invocation": "singular-str-alg-strcat_len",
+  "artifact_relative_to_campaign": "reachability/strings107/full/artifacts/singular-str-alg-strcat_len/frontend/strcat_len-smt-20261111T012030Z/out.smt2",
+  "source_copy_audit": {
+    "original_sha256": "fed1da77241796550a8baa1d1acdb89c51b86e30701c147691e19a0da4bcc282",
+    "frontend_c_sha256": "fed1da77241796550a8baa1d1acdb89c51b86e30701c147691e19a0da4bcc282",
+    "original_headers_unchanged": true
+  },
+  "parser_audit": {
+    "rules": 24,
+    "query": "main@verifier.error.split",
+    "z3_parser_version": "4.15.3",
+    "logic_sha256": "233534469d361babd5e51a7ea7d3cb0768d93f2aa1e3a75f1bed251064ce55e8"
+  },
+  "soundness_validated": false,
+  "note": "This records matching source/translation provenance, not an independently certified C safety proof."
+}

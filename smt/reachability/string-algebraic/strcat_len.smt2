@@ -1,16 +1,16 @@
-(set-info :original "/home/ubuntu/ama/results/seahorn-preview-smt-20261104/artifacts/reachability/string-algebraic/strcat_len/out.o.bc")
+(set-info :original "/home/ubuntu/ama/results/ama-correction-only-all565-official-300s-20261111T010625Z/reachability/strings107/full/artifacts/singular-str-alg-strcat_len/frontend/strcat_len-smt-20261111T012030Z/out.o.bc")
 (set-info :authors "SeaHorn v.14.0.0-rc0")
 (declare-rel verifier.error (Bool Bool Bool ))
 (declare-rel main@entry (Int ))
 (declare-rel main@_7 (Int Int (Array Int Int) Int (Array Int Int) Int (Array Int Int) (Array Int Int) ))
 (declare-rel main@_16 (Int Int Int (Array Int Int) (Array Int Int) (Array Int Int) Int (Array Int Int) ))
-(declare-rel main@_27 (Int Int Int Int (Array Int Int) (Array Int Int) Int (Array Int Int) (Array Int Int) Int ))
-(declare-rel main@_33 (Int Int (Array Int Int) Int Int (Array Int Int) (Array Int Int) Int (Array Int Int) ))
-(declare-rel main@_39 (Int Int (Array Int Int) Int (Array Int Int) Int (Array Int Int) ))
-(declare-rel main@_48 (Int Int (Array Int Int) Int Int (Array Int Int) (Array Int Int) Int ))
-(declare-rel main@_54 (Int Int (Array Int Int) (Array Int Int) Int (Array Int Int) Int ))
-(declare-rel main@_62 (Int (Array Int Int) Int Int (Array Int Int) Int ))
-(declare-rel main@_70 (Int Int Int Int (Array Int Int) ))
+(declare-rel main@_27 (Int Int Int Int (Array Int Int) Int Int (Array Int Int) (Array Int Int) (Array Int Int) ))
+(declare-rel main@_33 (Int Int (Array Int Int) Int Int (Array Int Int) Int Int (Array Int Int) (Array Int Int) ))
+(declare-rel main@_39 (Int Int (Array Int Int) (Array Int Int) Int Int Int (Array Int Int) (Array Int Int) ))
+(declare-rel main@_48 (Int (Array Int Int) (Array Int Int) Int Int (Array Int Int) Int Int (Array Int Int) ))
+(declare-rel main@_54 (Int (Array Int Int) (Array Int Int) (Array Int Int) Int Int Int ))
+(declare-rel main@_62 ((Array Int Int) (Array Int Int) Int Int Int Int ))
+(declare-rel main@_70 ((Array Int Int) Int Int Int Int ))
 (declare-rel main@verifier.error.split ())
 (declare-var main@%_11_0 Int )
 (declare-var main@%_12_0 Int )
@@ -198,7 +198,7 @@
                 (=> main@_3_0 (= main@%_6_0 1))
                 (=> main@_7_0 (and main@_7_0 main@_3_0))
                 (=> (and main@_7_0 main@_3_0)
-                    (= main@%shadow.mem.0.0_0 main@%sm18_0))
+                    (= main@%shadow.mem.0.0_0 main@%sm20_0))
                 (=> (and main@_7_0 main@_3_0) (= main@%.0.i_0 0))
                 (=> (and main@_7_0 main@_3_0)
                     (= main@%shadow.mem.0.0_1 main@%shadow.mem.0.0_0))
@@ -211,7 +211,7 @@
                main@%_6_0
                main@%sm21_0
                main@%_1_0
-               main@%sm20_0
+               main@%sm18_0
                main@%sm19_0))))
 (rule (let ((a!1 (=> main@_10_0 (= main@%_12_0 (+ 1 (* main@%.0.i_0 1))))))
 (let ((a!2 (and (main@_7 main@%.0.i_0
@@ -220,7 +220,7 @@
                          main@%_6_0
                          main@%sm21_0
                          main@%_1_0
-                         main@%sm20_0
+                         main@%sm18_0
                          main@%sm19_0)
                 true
                 (= main@%_8_0 (- main@%_1_0 1))
@@ -249,7 +249,7 @@
                main@%_6_0
                main@%sm21_0
                main@%_1_0
-               main@%sm20_0
+               main@%sm18_0
                main@%sm19_0)))))
 (rule (let ((a!1 (=> main@init.exit_0 (= main@%_15_0 (+ 1 (* main@%_14_0 1))))))
 (let ((a!2 (and (main@_7 main@%.0.i_0
@@ -258,7 +258,7 @@
                          main@%_6_0
                          main@%sm21_0
                          main@%_1_0
-                         main@%sm20_0
+                         main@%sm18_0
                          main@%sm19_0)
                 true
                 (= main@%_8_0 (- main@%_1_0 1))
@@ -289,7 +289,7 @@
                 main@%sm12_0
                 main@%sm21_0
                 main@%_1_0
-                main@%sm20_0)))))
+                main@%sm18_0)))))
 (rule (let ((a!1 (=> main@_19_0 (= main@%_21_0 (+ 1 (* main@%.0.i1_0 1))))))
 (let ((a!2 (and (main@_16 main@%_4_0
                           main@%.0.i1_0
@@ -298,7 +298,7 @@
                           main@%sm12_0
                           main@%sm21_0
                           main@%_1_0
-                          main@%sm20_0)
+                          main@%sm18_0)
                 true
                 (= main@%_17_0 (- main@%_1_0 1))
                 (= main@%_18_0 (< main@%.0.i1_0 main@%_17_0))
@@ -327,7 +327,7 @@
                 main@%sm12_0
                 main@%sm21_0
                 main@%_1_0
-                main@%sm20_0)))))
+                main@%sm18_0)))))
 (rule (let ((a!1 (=> main@init.exit2_0 (= main@%_24_0 (+ 1 (* main@%_23_0 1))))))
 (let ((a!2 (and (main@_16 main@%_4_0
                           main@%.0.i1_0
@@ -336,7 +336,7 @@
                           main@%sm12_0
                           main@%sm21_0
                           main@%_1_0
-                          main@%sm20_0)
+                          main@%sm18_0)
                 true
                 (= main@%_17_0 (- main@%_1_0 1))
                 (= main@%_18_0 (< main@%.0.i1_0 main@%_17_0))
@@ -353,7 +353,7 @@
                 (=> main@init.exit2_0 (= main@%_26_0 1))
                 (=> main@_27_0 (and main@_27_0 main@init.exit2_0))
                 (=> (and main@_27_0 main@init.exit2_0)
-                    (= main@%shadow.mem.2.0_0 main@%sm20_0))
+                    (= main@%shadow.mem.2.0_0 main@%sm18_0))
                 (=> (and main@_27_0 main@init.exit2_0)
                     (= main@%.01.i.i_0 main@%_4_0))
                 (=> (and main@_27_0 main@init.exit2_0)
@@ -371,11 +371,11 @@
                 main@%.01.i.i_1
                 main@%.0.i.i_1
                 main@%shadow.mem.2.0_1
-                main@%sm12_0
                 main@%_25_0
+                main@%_26_0
+                main@%sm12_0
                 main@%sm14_0
-                main@%sm21_0
-                main@%_26_0)))))
+                main@%sm21_0)))))
 (rule (let ((a!1 (=> main@_30_0 (= main@%_31_0 (+ main@%.01.i.i_0 (* 1 1)))))
       (a!2 (=> main@_30_0 (= main@%_32_0 (+ main@%.0.i.i_0 (* 1 1))))))
 (let ((a!3 (and (main@_27 main@%_4_0
@@ -383,11 +383,11 @@
                           main@%.01.i.i_0
                           main@%.0.i.i_0
                           main@%shadow.mem.2.0_0
-                          main@%sm12_0
                           main@%_25_0
+                          main@%_26_0
+                          main@%sm12_0
                           main@%sm14_0
-                          main@%sm21_0
-                          main@%_26_0)
+                          main@%sm21_0)
                 true
                 (= main@%_28_0 (select main@%sm12_0 main@%.01.i.i_0))
                 (= main@%sm15_0
@@ -417,21 +417,21 @@
                 main@%.01.i.i_2
                 main@%.0.i.i_2
                 main@%shadow.mem.2.0_2
-                main@%sm12_0
                 main@%_25_0
+                main@%_26_0
+                main@%sm12_0
                 main@%sm14_0
-                main@%sm21_0
-                main@%_26_0)))))
+                main@%sm21_0)))))
 (rule (let ((a!1 (and (main@_27 main@%_4_0
                           main@%_6_0
                           main@%.01.i.i_0
                           main@%.0.i.i_0
                           main@%shadow.mem.2.0_0
-                          main@%sm12_0
                           main@%_25_0
+                          main@%_26_0
+                          main@%sm12_0
                           main@%sm14_0
-                          main@%sm21_0
-                          main@%_26_0)
+                          main@%sm21_0)
                 true
                 (= main@%_28_0 (select main@%sm12_0 main@%.01.i.i_0))
                 (= main@%sm15_0
@@ -460,8 +460,9 @@
                 main@%.01.i.i9_1
                 main@%.0.i.i10_1
                 main@%shadow.mem.3.0_1
-                main@%sm12_0
                 main@%_25_0
+                main@%_26_0
+                main@%sm12_0
                 main@%sm14_0))))
 (rule (let ((a!1 (=> main@_36_0 (= main@%_37_0 (+ main@%.01.i.i9_0 (* 1 1)))))
       (a!2 (=> main@_36_0 (= main@%_38_0 (+ main@%.0.i.i10_0 (* 1 1))))))
@@ -471,8 +472,9 @@
                           main@%.01.i.i9_0
                           main@%.0.i.i10_0
                           main@%shadow.mem.3.0_0
-                          main@%sm12_0
                           main@%_25_0
+                          main@%_26_0
+                          main@%sm12_0
                           main@%sm14_0)
                 true
                 (= main@%_34_0 (select main@%sm14_0 main@%.01.i.i9_0))
@@ -506,8 +508,9 @@
                 main@%.01.i.i9_2
                 main@%.0.i.i10_2
                 main@%shadow.mem.3.0_2
-                main@%sm12_0
                 main@%_25_0
+                main@%_26_0
+                main@%sm12_0
                 main@%sm14_0)))))
 (rule (let ((a!1 (and (main@_33 main@%_4_0
                           main@%_6_0
@@ -515,8 +518,9 @@
                           main@%.01.i.i9_0
                           main@%.0.i.i10_0
                           main@%shadow.mem.3.0_0
-                          main@%sm12_0
                           main@%_25_0
+                          main@%_26_0
+                          main@%sm12_0
                           main@%sm14_0)
                 true
                 (= main@%_34_0 (select main@%sm14_0 main@%.01.i.i9_0))
@@ -535,17 +539,21 @@
       (main@_39 main@%_4_0
                 main@%_6_0
                 main@%sm15_0
+                main@%sm16_0
                 main@%.0.i.i8_1
-                main@%sm12_0
                 main@%_25_0
+                main@%_26_0
+                main@%sm12_0
                 main@%sm14_0))))
 (rule (let ((a!1 (=> main@_42_0 (= main@%_43_0 (+ main@%.0.i.i8_0 (* 1 1))))))
 (let ((a!2 (and (main@_39 main@%_4_0
                           main@%_6_0
                           main@%sm15_0
+                          main@%sm16_0
                           main@%.0.i.i8_0
-                          main@%sm12_0
                           main@%_25_0
+                          main@%_26_0
+                          main@%sm12_0
                           main@%sm14_0)
                 true
                 (= main@%_40_0 (select main@%sm14_0 main@%.0.i.i8_0))
@@ -563,17 +571,21 @@
       (main@_39 main@%_4_0
                 main@%_6_0
                 main@%sm15_0
+                main@%sm16_0
                 main@%.0.i.i8_2
-                main@%sm12_0
                 main@%_25_0
+                main@%_26_0
+                main@%sm12_0
                 main@%sm14_0)))))
 (rule (let ((a!1 (=> main@strlen.exit.i_0 (= main@%_47_0 (+ 1 (* main@%_46_0 1))))))
 (let ((a!2 (and (main@_39 main@%_4_0
                           main@%_6_0
                           main@%sm15_0
+                          main@%sm16_0
                           main@%.0.i.i8_0
-                          main@%sm12_0
                           main@%_25_0
+                          main@%_26_0
+                          main@%sm12_0
                           main@%sm14_0)
                 true
                 (= main@%_40_0 (select main@%sm14_0 main@%.0.i.i8_0))
@@ -602,24 +614,26 @@
                     (= main@%.0.i.i.i_1 main@%.0.i.i.i_0))
                 main@_48_0)))
   (=> a!2
-      (main@_48 main@%_4_0
-                main@%_6_0
+      (main@_48 main@%_6_0
                 main@%sm15_0
+                main@%sm16_0
                 main@%.01.i.i.i_1
                 main@%.0.i.i.i_1
                 main@%shadow.mem.1.1_1
-                main@%sm12_0
-                main@%_25_0)))))
+                main@%_25_0
+                main@%_26_0
+                main@%sm12_0)))))
 (rule (let ((a!1 (=> main@_51_0 (= main@%_52_0 (+ main@%.01.i.i.i_0 (* 1 1)))))
       (a!2 (=> main@_51_0 (= main@%_53_0 (+ main@%.0.i.i.i_0 (* 1 1))))))
-(let ((a!3 (and (main@_48 main@%_4_0
-                          main@%_6_0
+(let ((a!3 (and (main@_48 main@%_6_0
                           main@%sm15_0
+                          main@%sm16_0
                           main@%.01.i.i.i_0
                           main@%.0.i.i.i_0
                           main@%shadow.mem.1.1_0
-                          main@%sm12_0
-                          main@%_25_0)
+                          main@%_25_0
+                          main@%_26_0
+                          main@%sm12_0)
                 true
                 (= main@%_49_0 (select main@%sm12_0 main@%.01.i.i.i_0))
                 (= main@%sm17_0
@@ -646,22 +660,24 @@
                     (= main@%.0.i.i.i_2 main@%.0.i.i.i_1))
                 main@_48_1)))
   (=> a!3
-      (main@_48 main@%_4_0
-                main@%_6_0
+      (main@_48 main@%_6_0
                 main@%sm15_0
+                main@%sm16_0
                 main@%.01.i.i.i_2
                 main@%.0.i.i.i_2
                 main@%shadow.mem.1.1_2
-                main@%sm12_0
-                main@%_25_0)))))
-(rule (let ((a!1 (and (main@_48 main@%_4_0
-                          main@%_6_0
+                main@%_25_0
+                main@%_26_0
+                main@%sm12_0)))))
+(rule (let ((a!1 (and (main@_48 main@%_6_0
                           main@%sm15_0
+                          main@%sm16_0
                           main@%.01.i.i.i_0
                           main@%.0.i.i.i_0
                           main@%shadow.mem.1.1_0
-                          main@%sm12_0
-                          main@%_25_0)
+                          main@%_25_0
+                          main@%_26_0
+                          main@%sm12_0)
                 true
                 (= main@%_49_0 (select main@%sm12_0 main@%.01.i.i.i_0))
                 (= main@%sm17_0
@@ -676,21 +692,21 @@
                     (= main@%.0.i6_1 main@%.0.i6_0))
                 main@_54_0)))
   (=> a!1
-      (main@_54 main@%_4_0
-                main@%_6_0
+      (main@_54 main@%_6_0
                 main@%sm15_0
+                main@%sm16_0
                 main@%sm17_0
                 main@%.0.i6_1
-                main@%sm12_0
-                main@%_25_0))))
+                main@%_25_0
+                main@%_26_0))))
 (rule (let ((a!1 (=> main@_57_0 (= main@%_58_0 (+ main@%.0.i6_0 (* 1 1))))))
-(let ((a!2 (and (main@_54 main@%_4_0
-                          main@%_6_0
+(let ((a!2 (and (main@_54 main@%_6_0
                           main@%sm15_0
+                          main@%sm16_0
                           main@%sm17_0
                           main@%.0.i6_0
-                          main@%sm12_0
-                          main@%_25_0)
+                          main@%_25_0
+                          main@%_26_0)
                 true
                 (= main@%_55_0 (select main@%sm17_0 main@%.0.i6_0))
                 (= main@%_56_0 (not (= main@%_55_0 0)))
@@ -703,20 +719,20 @@
                 (=> (and main@_54_1 main@_57_0) (= main@%.0.i6_2 main@%.0.i6_1))
                 main@_54_1)))
   (=> a!2
-      (main@_54 main@%_4_0
-                main@%_6_0
+      (main@_54 main@%_6_0
                 main@%sm15_0
+                main@%sm16_0
                 main@%sm17_0
                 main@%.0.i6_2
-                main@%sm12_0
-                main@%_25_0)))))
-(rule (let ((a!1 (and (main@_54 main@%_4_0
-                          main@%_6_0
+                main@%_25_0
+                main@%_26_0)))))
+(rule (let ((a!1 (and (main@_54 main@%_6_0
                           main@%sm15_0
+                          main@%sm16_0
                           main@%sm17_0
                           main@%.0.i6_0
-                          main@%sm12_0
-                          main@%_25_0)
+                          main@%_25_0
+                          main@%_26_0)
                 true
                 (= main@%_55_0 (select main@%sm17_0 main@%.0.i6_0))
                 (= main@%_56_0 (not (= main@%_55_0 0)))
@@ -728,26 +744,26 @@
                     (= main@%_61_0 (- main@%_59_0 main@%_60_0)))
                 (=> main@_62_0 (and main@_62_0 main@strlen.exit7_0))
                 (=> (and main@_62_0 main@strlen.exit7_0)
-                    (= main@%.0.i4_0 main@%_25_0))
+                    (= main@%.0.i4_0 main@%_26_0))
                 (=> (and main@_62_0 main@strlen.exit7_0)
                     (= main@%.0.i4_1 main@%.0.i4_0))
                 main@_62_0)))
   (=> a!1
-      (main@_62 main@%_4_0
-                main@%sm15_0
+      (main@_62 main@%sm15_0
+                main@%sm16_0
                 main@%.0.i4_1
+                main@%_25_0
                 main@%_61_0
-                main@%sm12_0
-                main@%_25_0))))
+                main@%_26_0))))
 (rule (let ((a!1 (=> main@_65_0 (= main@%_66_0 (+ main@%.0.i4_0 (* 1 1))))))
-(let ((a!2 (and (main@_62 main@%_4_0
-                          main@%sm15_0
+(let ((a!2 (and (main@_62 main@%sm15_0
+                          main@%sm16_0
                           main@%.0.i4_0
+                          main@%_25_0
                           main@%_61_0
-                          main@%sm12_0
-                          main@%_25_0)
+                          main@%_26_0)
                 true
-                (= main@%_63_0 (select main@%sm15_0 main@%.0.i4_0))
+                (= main@%_63_0 (select main@%sm16_0 main@%.0.i4_0))
                 (= main@%_64_0 (not (= main@%_63_0 0)))
                 (=> main@_65_0 (and main@_65_0 main@_62_0))
                 (=> (and main@_65_0 main@_62_0) main@%_64_0)
@@ -758,43 +774,43 @@
                 (=> (and main@_62_1 main@_65_0) (= main@%.0.i4_2 main@%.0.i4_1))
                 main@_62_1)))
   (=> a!2
-      (main@_62 main@%_4_0
-                main@%sm15_0
+      (main@_62 main@%sm15_0
+                main@%sm16_0
                 main@%.0.i4_2
+                main@%_25_0
                 main@%_61_0
-                main@%sm12_0
-                main@%_25_0)))))
-(rule (let ((a!1 (and (main@_62 main@%_4_0
-                          main@%sm15_0
+                main@%_26_0)))))
+(rule (let ((a!1 (and (main@_62 main@%sm15_0
+                          main@%sm16_0
                           main@%.0.i4_0
+                          main@%_25_0
                           main@%_61_0
-                          main@%sm12_0
-                          main@%_25_0)
+                          main@%_26_0)
                 true
-                (= main@%_63_0 (select main@%sm15_0 main@%.0.i4_0))
+                (= main@%_63_0 (select main@%sm16_0 main@%.0.i4_0))
                 (= main@%_64_0 (not (= main@%_63_0 0)))
                 (=> main@strlen.exit5_0 (and main@strlen.exit5_0 main@_62_0))
                 (=> (and main@strlen.exit5_0 main@_62_0) (not main@%_64_0))
                 (=> main@strlen.exit5_0 (= main@%_67_0 main@%.0.i4_0))
-                (=> main@strlen.exit5_0 (= main@%_68_0 main@%_25_0))
+                (=> main@strlen.exit5_0 (= main@%_68_0 main@%_26_0))
                 (=> main@strlen.exit5_0
                     (= main@%_69_0 (- main@%_67_0 main@%_68_0)))
                 (=> main@_70_0 (and main@_70_0 main@strlen.exit5_0))
                 (=> (and main@_70_0 main@strlen.exit5_0)
-                    (= main@%.0.i3_0 main@%_4_0))
+                    (= main@%.0.i3_0 main@%_25_0))
                 (=> (and main@_70_0 main@strlen.exit5_0)
                     (= main@%.0.i3_1 main@%.0.i3_0))
                 main@_70_0)))
   (=> a!1
-      (main@_70 main@%_4_0 main@%.0.i3_1 main@%_69_0 main@%_61_0 main@%sm12_0))))
+      (main@_70 main@%sm15_0 main@%.0.i3_1 main@%_25_0 main@%_69_0 main@%_61_0))))
 (rule (let ((a!1 (=> main@_73_0 (= main@%_74_0 (+ main@%.0.i3_0 (* 1 1))))))
-(let ((a!2 (and (main@_70 main@%_4_0
+(let ((a!2 (and (main@_70 main@%sm15_0
                           main@%.0.i3_0
+                          main@%_25_0
                           main@%_69_0
-                          main@%_61_0
-                          main@%sm12_0)
+                          main@%_61_0)
                 true
-                (= main@%_71_0 (select main@%sm12_0 main@%.0.i3_0))
+                (= main@%_71_0 (select main@%sm15_0 main@%.0.i3_0))
                 (= main@%_72_0 (not (= main@%_71_0 0)))
                 (=> main@_73_0 (and main@_73_0 main@_70_0))
                 (=> (and main@_73_0 main@_70_0) main@%_72_0)
@@ -805,21 +821,21 @@
                 (=> (and main@_70_1 main@_73_0) (= main@%.0.i3_2 main@%.0.i3_1))
                 main@_70_1)))
   (=> a!2
-      (main@_70 main@%_4_0 main@%.0.i3_2 main@%_69_0 main@%_61_0 main@%sm12_0)))))
+      (main@_70 main@%sm15_0 main@%.0.i3_2 main@%_25_0 main@%_69_0 main@%_61_0)))))
 (rule (let ((a!1 (=> main@__JVERIFIER_assert_0
                (= main@%_82_0 (not (= main@%_80_0 0))))))
-(let ((a!2 (and (main@_70 main@%_4_0
+(let ((a!2 (and (main@_70 main@%sm15_0
                           main@%.0.i3_0
+                          main@%_25_0
                           main@%_69_0
-                          main@%_61_0
-                          main@%sm12_0)
+                          main@%_61_0)
                 true
-                (= main@%_71_0 (select main@%sm12_0 main@%.0.i3_0))
+                (= main@%_71_0 (select main@%sm15_0 main@%.0.i3_0))
                 (= main@%_72_0 (not (= main@%_71_0 0)))
                 (=> main@strlen.exit_0 (and main@strlen.exit_0 main@_70_0))
                 (=> (and main@strlen.exit_0 main@_70_0) (not main@%_72_0))
                 (=> main@strlen.exit_0 (= main@%_75_0 main@%.0.i3_0))
-                (=> main@strlen.exit_0 (= main@%_76_0 main@%_4_0))
+                (=> main@strlen.exit_0 (= main@%_76_0 main@%_25_0))
                 (=> main@strlen.exit_0
                     (= main@%_77_0 (- main@%_75_0 main@%_76_0)))
                 (=> main@strlen.exit_0
