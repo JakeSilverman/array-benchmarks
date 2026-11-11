@@ -3,6 +3,7 @@ void __JVERIFIER_assert(int cond) { if(!(cond)) { ERROR:
 __VERIFIER_error(); } }
 extern int __VERIFIER_nondet_int();
 extern char __VERIFIER_nondet_char();
+extern void __VERIFIER_assume(int);
 typedef unsigned char __u_char;
 typedef unsigned short int __u_short;
 typedef unsigned int __u_int;
@@ -399,6 +400,9 @@ int main() {
   }
   char str[size];
   init(size, str);
+  /* Restrict this harness to nonempty strings: strlen(str) - 1 must not
+     form a pointer before str in the checking loop below. */
+  __VERIFIER_assume(str[0] != '\0');
   char lookup = __VERIFIER_nondet_char();
   char* index = strrchr(str, lookup);
   if (index != ((void *)0))

@@ -1,0 +1,40 @@
+{
+  "benchmark": "strrchr_fc-2",
+  "change": "After initialization, assume str[0] != 0 so the checking loop never forms str - 1 on an empty string.",
+  "precondition": "Nonempty string; this intentionally excludes empty-string inputs.",
+  "sources": [
+    {
+      "path": "c/reachability/string-fc/strrchr_fc-2.c",
+      "sha256": "5009457edb58eb87bdfa55b0f58a57fdbe9706c3a7541fad7943400b1c55369e"
+    },
+    {
+      "path": "c/reachability/string-fc/strrchr_fc-2.i",
+      "sha256": "e48fdd59bb09f929d567c638874ac2aee74358d0ba1b15e45661c28e18db409b"
+    }
+  ],
+  "header": {
+    "path": "c/reachability/string-fc/string.h",
+    "sha256": "b2e7c0fdf7e87d09a6037ceab8c3e0becddecbd508ccde29cae657499e91d06f"
+  },
+  "data_model": "ILP32",
+  "selected_yaml_input": "c/reachability/string-fc/strrchr_fc-2.i",
+  "generated_file": "smt/reachability/string-fc/strrchr_fc-2.smt2",
+  "generated_sha256": "216a96665eefe4ac89d655a2935418cd0bb7779eb5bb4d73ddd640b2fb6eee5a",
+  "generation": "Byte-identical native SeaHorn Fixedpoint CHCs freshly generated from the corrected preprocessed pointer input; no CHC rewriting.",
+  "generator": "SeaHorn v.14.0.0-rc0",
+  "frontend_wrapper_sha256": "5f828c280432d9c54c4a7d2c401ffd4bbcb650a3103a9cf112dfaabb6a775d17",
+  "invocation": "/home/ubuntu/ama/results/strrchr-nonempty-fix-20261111T043353Z",
+  "assumption_llvm_evidence": "main loads str[0], compares it != 0, and calls verifier.assume on that Boolean before reading lookup.",
+  "pointer_c_i_chcs_equal_apart_from_path": true,
+  "parser_audit": {
+    "rules": 16,
+    "queries": [
+      "main@verifier.error.split"
+    ],
+    "z3_parser_version": "4.15.0"
+  },
+  "validation": "Corrected pointer .i and indexed counterpart match 512 seeded native replays under ASan/UBSan: 96 assumption-pruned inputs, 88 assertion-reaching inputs, zero mismatches/errors. Pointer .c, pointer .i, and indexed sources compile through the existing SeaHorn frontend.",
+  "soundness_validated": false,
+  "official_result_reused": false,
+  "note": "Input/encoding repair only. Existing measured archives retain their original inputs and results; this revision has no new official solver result."
+}
